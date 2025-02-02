@@ -1,7 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { type User } from "../models/User";
+
 
 interface LoginResponse {
   token: string;
+  user: User;
 }
 
 interface LoginRequest {
@@ -19,13 +22,7 @@ interface RegisterRequest {
 
 interface RegisterResponse {
   token: string;
-  user: {
-    id: number;
-    email: string;
-    firstname: string;
-    lastname: string;
-    imageUrl?: string;
-  }
+  user: User;
 }
 
 export const authApi = createApi({

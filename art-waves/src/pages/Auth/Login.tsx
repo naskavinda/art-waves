@@ -82,6 +82,7 @@ export default function Login() {
       // Dispatch login action with token and remember me preference
       dispatch(login({ 
         token: response.token,
+        user: response.user,
         rememberMe: formData.rememberMe 
       }));
       

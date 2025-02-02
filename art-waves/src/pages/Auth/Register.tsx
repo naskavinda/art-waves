@@ -101,6 +101,7 @@ export const Register = () => {
 
       dispatch(login({ 
         token: response.token,
+        user: response.user,
         rememberMe: false
       }));
     } catch (err: unknown) {
