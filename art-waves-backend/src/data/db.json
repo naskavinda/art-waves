@@ -1,0 +1,5846 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Paintings",
+      "description": "Original paintings in various styles and mediums"
+    },
+    {
+      "id": 2,
+      "name": "Digital Art",
+      "description": "Digital artwork created using various software and techniques"
+    },
+    {
+      "id": 3,
+      "name": "Photography",
+      "description": "Fine art photography prints in various styles"
+    },
+    {
+      "id": 4,
+      "name": "Sculptures",
+      "description": "3D artworks in various materials"
+    },
+    {
+      "id": 5,
+      "name": "Mixed Media",
+      "description": "Artworks combining multiple mediums and techniques"
+    },
+    {
+      "id": 6,
+      "name": "Drawings",
+      "description": "Hand-drawn artwork using various materials"
+    },
+    {
+      "id": 7,
+      "name": "Abstract",
+      "description": "Non-representational artwork in various styles"
+    },
+    {
+      "id": 8,
+      "name": "Portrait",
+      "description": "Portrait artwork in various styles and mediums"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Surreal Ocean",
+      "description": "Vibrant Pastel artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 1352,
+      "discount": 0,
+      "final_price": 1352,
+      "category_id": 8,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=3",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=4",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=5",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "James B.",
+          "date": "2024-02-27T07:44:17.367Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-04-03T22:40:41.598Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-10-09T16:18:07.817Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-06-29T21:42:49.148Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-07-30T20:04:42.856Z"
+        }
+      ],
+      "average_rating": 4.2,
+      "review_count": 5
+    },
+    {
+      "id": 2,
+      "name": "Art Nouveau Seascape",
+      "description": "Elegant Pencil artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 4572,
+      "discount": 0,
+      "final_price": 4572,
+      "category_id": 2,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=6",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=7",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=8",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "David L.",
+          "date": "2024-12-07T20:56:25.969Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-09-25T02:04:42.794Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-26T21:41:51.910Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-07-17T20:22:17.138Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-03-01T02:42:08.885Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-08-03T12:07:10.233Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-04T22:25:47.843Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 7
+    },
+    {
+      "id": 3,
+      "name": "Abstract Street Scene",
+      "description": "Delicate Oil artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 2142,
+      "discount": 0,
+      "final_price": 2142,
+      "category_id": 6,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=9",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=10",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=11",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-04-14T05:08:47.551Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2024-09-07T08:53:39.973Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-11-21T14:52:04.931Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-12T13:08:20.967Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-31T22:43:11.434Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-04-14T19:09:35.969Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-02T05:53:35.120Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 7
+    },
+    {
+      "id": 4,
+      "name": "Folk Art Architecture",
+      "description": "Intricate Glass artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 2863,
+      "discount": 0,
+      "final_price": 2863,
+      "category_id": 8,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=12",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=13",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=14",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-09-03T16:19:00.059Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-27T09:42:40.772Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-13T10:09:52.531Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-24T01:42:48.544Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-04-02T03:51:56.854Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-11-13T03:47:19.437Z"
+        }
+      ],
+      "average_rating": 3.8,
+      "review_count": 6
+    },
+    {
+      "id": 5,
+      "name": "Gothic Portrait",
+      "description": "Delicate Digital artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1245,
+      "discount": 15,
+      "final_price": 1058.25,
+      "category_id": 1,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=15",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=16",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=17",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-05-28T10:18:31.376Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-03-10T02:51:04.086Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-03-21T20:30:07.428Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-31T05:46:27.211Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-02-06T11:25:05.314Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "James B.",
+          "date": "2024-12-17T18:06:45.875Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "James B.",
+          "date": "2024-04-10T08:09:22.108Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 7
+    },
+    {
+      "id": 6,
+      "name": "Surreal Garden",
+      "description": "Elegant Digital artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 2502,
+      "discount": 21,
+      "final_price": 1976.58,
+      "category_id": 2,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=18",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=19",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=20",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-09-01T14:33:40.151Z"
+        }
+      ],
+      "average_rating": 3,
+      "review_count": 1
+    },
+    {
+      "id": 7,
+      "name": "Surreal Landscape",
+      "description": "Dynamic Pastel artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3041,
+      "discount": 0,
+      "final_price": 3041,
+      "category_id": 6,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=21",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=22",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=23",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-12-02T09:20:47.197Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-12-31T10:59:41.736Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-03-30T16:32:15.366Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-17T10:04:00.546Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-20T08:24:11.756Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 8,
+      "name": "Surreal Animal",
+      "description": "Delicate Pastel artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 3872,
+      "discount": 0,
+      "final_price": 3872,
+      "category_id": 4,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=24",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=25",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=26",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-10-07T05:03:26.935Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-19T18:42:07.588Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "David L.",
+          "date": "2024-06-03T02:32:06.892Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-06-14T16:08:41.941Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "John D.",
+          "date": "2024-11-05T03:22:38.265Z"
+        }
+      ],
+      "average_rating": 3.4,
+      "review_count": 5
+    },
+    {
+      "id": 9,
+      "name": "Modern Mountain",
+      "description": "Bold Glass artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3144,
+      "discount": 0,
+      "final_price": 3144,
+      "category_id": 6,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=27",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=28",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=29",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-12-07T23:36:13.138Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-06-04T03:49:20.908Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 2
+    },
+    {
+      "id": 10,
+      "name": "Expressionist Garden",
+      "description": "Dramatic Acrylic artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 716,
+      "discount": 0,
+      "final_price": 716,
+      "category_id": 8,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=30",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=31",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=32",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-07-05T23:17:14.004Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "James B.",
+          "date": "2025-01-02T22:33:49.544Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-10-07T11:06:45.349Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-01T04:37:41.530Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-26T21:40:39.655Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2025-01-28T15:12:33.869Z"
+        }
+      ],
+      "average_rating": 3.8,
+      "review_count": 6
+    },
+    {
+      "id": 11,
+      "name": "Minimalist Street Scene",
+      "description": "Whimsical Bronze artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 2709,
+      "discount": 27,
+      "final_price": 1977.57,
+      "category_id": 4,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=33",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=34",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=35",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-08-18T09:30:23.182Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-02-22T10:28:37.090Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2024-02-16T17:13:03.665Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-04-06T04:37:13.487Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-16T00:36:26.786Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2025-01-10T09:37:57.100Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 6
+    },
+    {
+      "id": 12,
+      "name": "Folk Art Landscape",
+      "description": "Minimalist Digital artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 1667,
+      "discount": 0,
+      "final_price": 1667,
+      "category_id": 7,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=36",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=37",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=38",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "James B.",
+          "date": "2024-11-30T15:01:31.491Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-02T23:17:49.428Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Lisa K.",
+          "date": "2025-01-20T09:27:20.666Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-04-04T05:47:14.970Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 4
+    },
+    {
+      "id": 13,
+      "name": "Expressionist Portrait",
+      "description": "Ethereal Oil artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3261,
+      "discount": 19,
+      "final_price": 2641.41,
+      "category_id": 7,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=39",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=40",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=41",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-10-10T06:25:34.811Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-24T20:09:07.490Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-04-16T18:19:23.146Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Lisa K.",
+          "date": "2025-01-26T20:16:08.204Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-07-18T17:42:59.020Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-26T16:38:24.637Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "David L.",
+          "date": "2024-10-28T12:32:31.815Z"
+        }
+      ],
+      "average_rating": 4.1,
+      "review_count": 7
+    },
+    {
+      "id": 14,
+      "name": "Folk Art Landscape",
+      "description": "Mystical Marble artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 4472,
+      "discount": 0,
+      "final_price": 4472,
+      "category_id": 8,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=42",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=43",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=44",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-07-20T00:42:40.939Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-19T07:48:27.969Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "David L.",
+          "date": "2024-12-09T19:12:58.465Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 3
+    },
+    {
+      "id": 15,
+      "name": "Folk Art Portrait",
+      "description": "Dynamic Ink artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 2855,
+      "discount": 0,
+      "final_price": 2855,
+      "category_id": 5,
+      "stock": 5,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=45",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=46",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=47",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-11-19T14:44:04.355Z"
+        }
+      ],
+      "average_rating": 5,
+      "review_count": 1
+    },
+    {
+      "id": 16,
+      "name": "Expressionist Abstract Composition",
+      "description": "Whimsical Photography artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3616,
+      "discount": 16,
+      "final_price": 3037.44,
+      "category_id": 7,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=48",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=49",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=50",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "John D.",
+          "date": "2024-02-11T05:42:47.356Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-27T21:07:14.976Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-06-26T06:39:14.412Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 3
+    },
+    {
+      "id": 17,
+      "name": "Art Nouveau Seascape",
+      "description": "Whimsical Marble artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 3814,
+      "discount": 0,
+      "final_price": 3814,
+      "category_id": 8,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=51",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=52",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=53",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-06-24T04:02:45.911Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Michael R.",
+          "date": "2025-01-23T18:05:51.779Z"
+        }
+      ],
+      "average_rating": 3,
+      "review_count": 2
+    },
+    {
+      "id": 18,
+      "name": "Gothic Abstract Composition",
+      "description": "Dramatic Marble artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 956,
+      "discount": 0,
+      "final_price": 956,
+      "category_id": 7,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=54",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=55",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=56",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-06-28T05:36:39.975Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-05T21:15:52.246Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-11-19T02:32:32.316Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-12-13T12:01:31.090Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-10-03T23:19:23.979Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-05-10T13:35:23.517Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 6
+    },
+    {
+      "id": 19,
+      "name": "Contemporary Forest",
+      "description": "Dramatic Pastel artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3483,
+      "discount": 0,
+      "final_price": 3483,
+      "category_id": 1,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=57",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=58",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=59",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "John D.",
+          "date": "2024-03-22T15:11:56.665Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-09-15T00:27:51.910Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-09T21:24:16.631Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-03-12T20:23:41.064Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-02-10T22:31:16.538Z"
+        }
+      ],
+      "average_rating": 3.2,
+      "review_count": 5
+    },
+    {
+      "id": 20,
+      "name": "Contemporary Street Scene",
+      "description": "Serene Pencil artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 3048,
+      "discount": 11,
+      "final_price": 2712.72,
+      "category_id": 8,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=60",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=61",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=62",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 21,
+      "name": "Baroque Figure",
+      "description": "Minimalist Ink artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 3037,
+      "discount": 0,
+      "final_price": 3037,
+      "category_id": 2,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=63",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=64",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=65",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-10-06T07:55:14.661Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2024-09-17T21:24:35.045Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-24T02:54:03.248Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-08T01:13:34.546Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-04-25T21:22:44.450Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-10T17:31:10.628Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-08-14T12:27:09.221Z"
+        }
+      ],
+      "average_rating": 3.9,
+      "review_count": 7
+    },
+    {
+      "id": 22,
+      "name": "Baroque Ocean",
+      "description": "Dramatic Metal artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 4492,
+      "discount": 0,
+      "final_price": 4492,
+      "category_id": 4,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=66",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=67",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=68",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-05-08T06:44:03.773Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-06-16T20:28:59.960Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-26T09:36:15.058Z"
+        }
+      ],
+      "average_rating": 3.3,
+      "review_count": 3
+    },
+    {
+      "id": 23,
+      "name": "Renaissance Seascape",
+      "description": "Whimsical Photography artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 267,
+      "discount": 0,
+      "final_price": 267,
+      "category_id": 2,
+      "stock": 5,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=69",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=70",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=71",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-11-02T14:57:05.262Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-10-26T15:02:23.758Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-10T13:10:49.268Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2025-01-02T15:59:38.015Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-12-03T15:44:54.938Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-11-06T23:45:26.154Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2025-01-16T16:41:19.623Z"
+        },
+        {
+          "id": 8,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-07-20T19:18:01.905Z"
+        }
+      ],
+      "average_rating": 3.6,
+      "review_count": 8
+    },
+    {
+      "id": 24,
+      "name": "Surreal Portrait",
+      "description": "Complex Glass artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 2011,
+      "discount": 0,
+      "final_price": 2011,
+      "category_id": 6,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=72",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=73",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=74",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-03-19T15:38:55.254Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-13T14:50:10.896Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-10T10:32:26.500Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-02-16T01:29:56.087Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-11-01T20:09:59.085Z"
+        }
+      ],
+      "average_rating": 3.8,
+      "review_count": 5
+    },
+    {
+      "id": 25,
+      "name": "Impressionist Portrait",
+      "description": "Ethereal Pencil artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 352,
+      "discount": 13,
+      "final_price": 306.24,
+      "category_id": 2,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=75",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=76",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=77",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-07-04T08:06:36.134Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-29T09:30:43.034Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-17T20:25:22.458Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 3
+    },
+    {
+      "id": 26,
+      "name": "Urban Animal",
+      "description": "Intricate Mixed Media artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 1007,
+      "discount": 0,
+      "final_price": 1007,
+      "category_id": 4,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=78",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=79",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=80",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "John D.",
+          "date": "2024-11-06T02:45:58.403Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-04T23:38:42.460Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2025-01-31T03:59:17.957Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-09-08T05:18:52.017Z"
+        }
+      ],
+      "average_rating": 3,
+      "review_count": 4
+    },
+    {
+      "id": 27,
+      "name": "Art Nouveau Figure",
+      "description": "Mystical Acrylic artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1685,
+      "discount": 0,
+      "final_price": 1685,
+      "category_id": 6,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=81",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=82",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=83",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 28,
+      "name": "Classical Garden",
+      "description": "Whimsical Bronze artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 237,
+      "discount": 0,
+      "final_price": 237,
+      "category_id": 4,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=84",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=85",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=86",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-06-01T15:45:04.662Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "James B.",
+          "date": "2024-11-01T12:54:06.365Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-04-26T02:24:32.060Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 3
+    },
+    {
+      "id": 29,
+      "name": "Baroque Mountain",
+      "description": "Dynamic Glass artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 1555,
+      "discount": 0,
+      "final_price": 1555,
+      "category_id": 3,
+      "stock": 4,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=87",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=88",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=89",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Robert P.",
+          "date": "2025-01-13T16:32:11.112Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-12-19T13:27:33.241Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-10-07T08:42:00.977Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-05-26T22:35:37.387Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-09-29T05:00:44.251Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 30,
+      "name": "Pop Art Portrait",
+      "description": "Complex Pastel artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 4666,
+      "discount": 0,
+      "final_price": 4666,
+      "category_id": 6,
+      "stock": 4,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=90",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=91",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=92",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-06-02T22:18:48.115Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-13T05:51:39.594Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 2
+    },
+    {
+      "id": 31,
+      "name": "Urban Mountain",
+      "description": "Intricate Pastel artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 941,
+      "discount": 0,
+      "final_price": 941,
+      "category_id": 7,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=93",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=94",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=95",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-10-19T10:45:28.981Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-11-16T01:46:21.209Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-09-12T03:15:49.748Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-02T18:43:36.560Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-26T03:35:13.663Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-19T14:16:07.527Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-06-14T11:07:37.664Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 7
+    },
+    {
+      "id": 32,
+      "name": "Modern Street Scene",
+      "description": "Elegant Clay artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 1228,
+      "discount": 8,
+      "final_price": 1129.76,
+      "category_id": 2,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=96",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=97",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=98",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-22T10:40:46.204Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "James B.",
+          "date": "2024-02-21T02:09:52.859Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-08-09T17:18:55.579Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-29T19:17:58.508Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-10T07:46:51.469Z"
+        }
+      ],
+      "average_rating": 4.2,
+      "review_count": 5
+    },
+    {
+      "id": 33,
+      "name": "Modern Figure",
+      "description": "Whimsical Oil artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 1672,
+      "discount": 0,
+      "final_price": 1672,
+      "category_id": 3,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=99",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=100",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=101",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-05-13T05:44:35.389Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-02-02T14:23:06.476Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-05-16T13:15:00.676Z"
+        }
+      ],
+      "average_rating": 5,
+      "review_count": 3
+    },
+    {
+      "id": 34,
+      "name": "Renaissance Architecture",
+      "description": "Intricate Photography artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 2336,
+      "discount": 7,
+      "final_price": 2172.48,
+      "category_id": 4,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=102",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=103",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=104",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-25T04:36:54.243Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-12-24T11:44:57.297Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-09-21T09:54:13.074Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-02-08T05:07:09.139Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-05-16T23:25:12.141Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-10-08T05:47:10.500Z"
+        }
+      ],
+      "average_rating": 3.8,
+      "review_count": 6
+    },
+    {
+      "id": 35,
+      "name": "Gothic Nature",
+      "description": "Vibrant Bronze artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3964,
+      "discount": 14,
+      "final_price": 3409.04,
+      "category_id": 6,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=105",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=106",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=107",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-04-05T21:09:34.636Z"
+        }
+      ],
+      "average_rating": 3,
+      "review_count": 1
+    },
+    {
+      "id": 36,
+      "name": "Folk Art Forest",
+      "description": "Complex Bronze artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 3892,
+      "discount": 8,
+      "final_price": 3580.64,
+      "category_id": 4,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=108",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=109",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=110",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-02-07T16:37:10.646Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-25T20:44:28.800Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-10-17T22:43:48.688Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-16T15:19:27.005Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-06-02T22:11:28.662Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 37,
+      "name": "Expressionist Landscape",
+      "description": "Bold Bronze artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 657,
+      "discount": 0,
+      "final_price": 657,
+      "category_id": 1,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=111",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=112",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=113",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-03-15T07:43:47.648Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-09-22T00:57:25.098Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 2
+    },
+    {
+      "id": 38,
+      "name": "Folk Art Garden",
+      "description": "Subtle Photography artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 2451,
+      "discount": 0,
+      "final_price": 2451,
+      "category_id": 5,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=114",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=115",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=116",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-07-29T15:20:40.411Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-26T15:05:15.980Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-17T11:44:34.918Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-11-23T18:47:11.456Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-16T13:00:25.510Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "John D.",
+          "date": "2024-02-02T08:52:22.310Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-08-11T18:33:31.698Z"
+        }
+      ],
+      "average_rating": 3.9,
+      "review_count": 7
+    },
+    {
+      "id": 39,
+      "name": "Pop Art Garden",
+      "description": "Dynamic Glass artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 1492,
+      "discount": 0,
+      "final_price": 1492,
+      "category_id": 8,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=117",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=118",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=119",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-07-15T22:07:04.996Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-12-16T01:36:37.381Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "John D.",
+          "date": "2024-03-20T19:58:48.319Z"
+        }
+      ],
+      "average_rating": 4.7,
+      "review_count": 3
+    },
+    {
+      "id": 40,
+      "name": "Modern Animal",
+      "description": "Powerful Metal artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 888,
+      "discount": 26,
+      "final_price": 657.12,
+      "category_id": 6,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=120",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=121",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=122",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 41,
+      "name": "Contemporary City Scene",
+      "description": "Vibrant Clay artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 3113,
+      "discount": 6,
+      "final_price": 2926.22,
+      "category_id": 5,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=123",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=124",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=125",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "David L.",
+          "date": "2024-10-13T22:48:32.322Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-09-26T21:46:23.050Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-28T14:05:21.845Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-11-04T02:36:12.379Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-04T10:29:42.420Z"
+        }
+      ],
+      "average_rating": 4.2,
+      "review_count": 5
+    },
+    {
+      "id": 42,
+      "name": "Surreal Seascape",
+      "description": "Dynamic Photography artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 811,
+      "discount": 0,
+      "final_price": 811,
+      "category_id": 7,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=126",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=127",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=128",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-12-09T17:34:15.594Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-17T01:30:54.123Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-12-14T20:30:48.429Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2024-11-24T05:09:38.891Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-02-04T02:49:25.606Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "John D.",
+          "date": "2024-09-06T09:46:24.255Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-23T11:34:42.983Z"
+        },
+        {
+          "id": 8,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-01T13:19:53.325Z"
+        }
+      ],
+      "average_rating": 3.6,
+      "review_count": 8
+    },
+    {
+      "id": 43,
+      "name": "Renaissance Portrait",
+      "description": "Whimsical Ink artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 1796,
+      "discount": 14,
+      "final_price": 1544.56,
+      "category_id": 8,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=129",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=130",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=131",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-24T04:59:36.477Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-04-25T00:52:39.069Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2024-08-10T22:11:51.752Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-15T20:39:31.266Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-12-10T19:06:26.610Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-02-05T23:00:45.257Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 6
+    },
+    {
+      "id": 44,
+      "name": "Art Nouveau Architecture",
+      "description": "Delicate Clay artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 878,
+      "discount": 0,
+      "final_price": 878,
+      "category_id": 2,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=132",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=133",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=134",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-17T06:53:01.588Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 1
+    },
+    {
+      "id": 45,
+      "name": "Impressionist City Scene",
+      "description": "Minimalist Pencil artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 4411,
+      "discount": 0,
+      "final_price": 4411,
+      "category_id": 2,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=135",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=136",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=137",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-08-19T06:47:43.686Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-06-28T14:40:36.245Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-01T17:17:06.889Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2024-03-18T06:36:14.495Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Emma W.",
+          "date": "2025-01-18T02:04:41.457Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-27T14:15:58.987Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-07T23:03:50.743Z"
+        }
+      ],
+      "average_rating": 4.1,
+      "review_count": 7
+    },
+    {
+      "id": 46,
+      "name": "Expressionist Mountain",
+      "description": "Ethereal Marble artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 130,
+      "discount": 10,
+      "final_price": 117,
+      "category_id": 3,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=138",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=139",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=140",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-08-25T15:02:49.436Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-11-24T02:41:10.527Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-06-26T13:08:03.099Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-11-08T19:19:01.319Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-06-08T21:02:50.288Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2024-02-12T03:21:20.058Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-28T06:50:30.875Z"
+        },
+        {
+          "id": 8,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-04-29T01:55:08.033Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 8
+    },
+    {
+      "id": 47,
+      "name": "Minimalist Architecture",
+      "description": "Dynamic Marble artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3599,
+      "discount": 0,
+      "final_price": 3599,
+      "category_id": 7,
+      "stock": 5,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=141",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=142",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=143",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-05T12:02:42.546Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-12-05T09:23:36.247Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Sarah M.",
+          "date": "2025-01-11T02:33:46.816Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-07-29T16:34:04.885Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "David L.",
+          "date": "2024-12-09T04:33:19.692Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "James B.",
+          "date": "2024-03-02T21:24:41.971Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-05-20T13:13:56.889Z"
+        }
+      ],
+      "average_rating": 4.4,
+      "review_count": 7
+    },
+    {
+      "id": 48,
+      "name": "Modern Street Scene",
+      "description": "Ethereal Marble artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 4448,
+      "discount": 0,
+      "final_price": 4448,
+      "category_id": 3,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=144",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=145",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=146",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-09-02T09:15:47.336Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-05-17T08:07:11.378Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 2
+    },
+    {
+      "id": 49,
+      "name": "Art Nouveau Architecture",
+      "description": "Intricate Pencil artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 1772,
+      "discount": 0,
+      "final_price": 1772,
+      "category_id": 5,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=147",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=148",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=149",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-25T02:36:53.274Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-04-21T06:18:26.753Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-12-05T10:09:48.111Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-16T03:24:53.833Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-03T10:24:42.103Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-12-30T10:47:25.154Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-06-06T15:31:39.214Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 7
+    },
+    {
+      "id": 50,
+      "name": "Classical Still Life",
+      "description": "Whimsical Pencil artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 1806,
+      "discount": 0,
+      "final_price": 1806,
+      "category_id": 4,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=150",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=151",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=152",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-11-11T00:37:04.687Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-23T14:48:46.757Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-10-17T21:19:22.891Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-04-26T11:58:09.991Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-26T08:01:25.354Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-11-20T20:49:07.927Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-04-10T07:46:16.969Z"
+        },
+        {
+          "id": 8,
+          "rating": 3,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2024-11-22T10:19:00.406Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 8
+    },
+    {
+      "id": 51,
+      "name": "Baroque Animal",
+      "description": "Powerful Watercolor artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 135,
+      "discount": 20,
+      "final_price": 108,
+      "category_id": 1,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=153",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=154",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=155",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-05-19T15:56:30.908Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "David L.",
+          "date": "2024-04-11T03:30:26.439Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 2
+    },
+    {
+      "id": 52,
+      "name": "Baroque Street Scene",
+      "description": "Ethereal Bronze artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 2250,
+      "discount": 13,
+      "final_price": 1957.5,
+      "category_id": 8,
+      "stock": 5,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=156",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=157",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=158",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-01T12:31:22.396Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "James B.",
+          "date": "2024-08-12T15:11:40.542Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-09-25T19:19:57.217Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "David L.",
+          "date": "2024-02-26T06:57:48.633Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 4
+    },
+    {
+      "id": 53,
+      "name": "Minimalist Abstract Composition",
+      "description": "Subtle Charcoal artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 610,
+      "discount": 25,
+      "final_price": 457.5,
+      "category_id": 2,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=159",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=160",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=161",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-02-04T14:19:44.054Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-08-20T01:26:23.939Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "David L.",
+          "date": "2024-10-15T02:56:14.667Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 3
+    },
+    {
+      "id": 54,
+      "name": "Gothic Ocean",
+      "description": "Complex Pencil artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 2995,
+      "discount": 0,
+      "final_price": 2995,
+      "category_id": 2,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=162",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=163",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=164",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-10-12T18:22:51.349Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-02T17:08:40.346Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-04-17T09:01:45.201Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-07-17T11:10:10.143Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2025-01-02T06:22:20.054Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-06T15:25:16.280Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-05T18:22:30.681Z"
+        },
+        {
+          "id": 8,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-15T07:19:23.207Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 8
+    },
+    {
+      "id": 55,
+      "name": "Abstract Nature",
+      "description": "Mystical Pastel artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 2783,
+      "discount": 21,
+      "final_price": 2198.57,
+      "category_id": 8,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=165",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=166",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=167",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-18T21:21:07.298Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2025-01-29T13:32:57.818Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-03-04T18:47:32.857Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-09-02T05:07:09.028Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "James B.",
+          "date": "2024-06-24T06:34:06.881Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-11-20T17:57:28.900Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-08-12T13:43:29.750Z"
+        }
+      ],
+      "average_rating": 3.6,
+      "review_count": 7
+    },
+    {
+      "id": 56,
+      "name": "Baroque Landscape",
+      "description": "Dramatic Ink artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 4639,
+      "discount": 15,
+      "final_price": 3943.15,
+      "category_id": 8,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=168",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=169",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=170",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 57,
+      "name": "Impressionist Mountain",
+      "description": "Subtle Oil artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 4367,
+      "discount": 0,
+      "final_price": 4367,
+      "category_id": 1,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=171",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=172",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=173",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-20T17:40:58.747Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-09-10T23:10:23.554Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-02-15T15:37:14.446Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-09-13T21:20:39.730Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 4
+    },
+    {
+      "id": 58,
+      "name": "Art Nouveau Portrait",
+      "description": "Bold Metal artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 1759,
+      "discount": 16,
+      "final_price": 1477.56,
+      "category_id": 8,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=174",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=175",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=176",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-07-10T14:07:42.327Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-21T01:37:19.464Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "John D.",
+          "date": "2024-05-05T10:29:51.102Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "David L.",
+          "date": "2024-09-01T21:35:52.288Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-02T09:45:34.401Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-08-02T14:10:21.770Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 6
+    },
+    {
+      "id": 59,
+      "name": "Folk Art Ocean",
+      "description": "Complex Clay artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 828,
+      "discount": 0,
+      "final_price": 828,
+      "category_id": 8,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=177",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=178",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=179",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-14T20:50:39.582Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-02-15T14:45:33.702Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-05-12T15:13:43.919Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-11-11T06:39:42.982Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-09-23T13:26:35.903Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-03T04:29:38.095Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-09-12T20:59:43.808Z"
+        },
+        {
+          "id": 8,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2024-04-09T04:00:35.349Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 8
+    },
+    {
+      "id": 60,
+      "name": "Contemporary Animal",
+      "description": "Bold Digital artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 140,
+      "discount": 0,
+      "final_price": 140,
+      "category_id": 2,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=180",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=181",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=182",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-08-18T00:41:39.317Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "James B.",
+          "date": "2024-11-14T02:15:01.435Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-02-26T14:02:36.336Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-05-15T20:35:45.698Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-02-14T13:43:24.127Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 61,
+      "name": "Folk Art Animal",
+      "description": "Elegant Bronze artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 187,
+      "discount": 26,
+      "final_price": 138.38,
+      "category_id": 5,
+      "stock": 4,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=183",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=184",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=185",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-31T19:29:12.620Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-07-25T13:28:49.201Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 2
+    },
+    {
+      "id": 62,
+      "name": "Surreal City Scene",
+      "description": "Ethereal Mixed Media artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 1249,
+      "discount": 0,
+      "final_price": 1249,
+      "category_id": 5,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=186",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=187",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=188",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-02-29T18:23:46.307Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-09-25T05:20:58.964Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-07-03T06:01:29.793Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-02-29T05:56:34.954Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "David L.",
+          "date": "2024-04-11T21:56:12.229Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 63,
+      "name": "Modern Garden",
+      "description": "Elegant Clay artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 2787,
+      "discount": 0,
+      "final_price": 2787,
+      "category_id": 5,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=189",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=190",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=191",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-03-02T08:59:37.358Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-15T07:31:51.199Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-06-26T19:42:47.691Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-18T23:42:26.803Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-09T02:40:39.334Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-04-05T14:14:42.448Z"
+        }
+      ],
+      "average_rating": 4.2,
+      "review_count": 6
+    },
+    {
+      "id": 64,
+      "name": "Expressionist Figure",
+      "description": "Delicate Mixed Media artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 3648,
+      "discount": 9,
+      "final_price": 3319.68,
+      "category_id": 4,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=192",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=193",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=194",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-05-13T08:36:56.957Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-05-08T01:07:04.216Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Lisa K.",
+          "date": "2025-01-06T16:49:33.630Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-10T09:25:39.033Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-02-24T00:26:18.307Z"
+        }
+      ],
+      "average_rating": 4.4,
+      "review_count": 5
+    },
+    {
+      "id": 65,
+      "name": "Contemporary Landscape",
+      "description": "Complex Oil artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1248,
+      "discount": 0,
+      "final_price": 1248,
+      "category_id": 1,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=195",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=196",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=197",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-07-13T02:11:26.571Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-06-13T18:44:45.739Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "James B.",
+          "date": "2024-04-20T17:35:22.585Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-11-01T00:05:15.753Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-03-29T19:16:27.532Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-07-19T08:38:38.374Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-10-19T15:56:22.202Z"
+        },
+        {
+          "id": 8,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-06-04T17:19:06.526Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 8
+    },
+    {
+      "id": 66,
+      "name": "Minimalist Forest",
+      "description": "Ethereal Pastel artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 1988,
+      "discount": 0,
+      "final_price": 1988,
+      "category_id": 5,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=198",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=199",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=200",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-12T03:25:01.021Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-12T00:09:15.791Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-12-29T03:25:48.025Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 3
+    },
+    {
+      "id": 67,
+      "name": "Urban Nature",
+      "description": "Vibrant Photography artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 1582,
+      "discount": 0,
+      "final_price": 1582,
+      "category_id": 4,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=201",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=202",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=203",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "David L.",
+          "date": "2024-07-11T15:42:37.316Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-09-23T17:16:35.352Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 2
+    },
+    {
+      "id": 68,
+      "name": "Classical Landscape",
+      "description": "Ethereal Marble artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3341,
+      "discount": 0,
+      "final_price": 3341,
+      "category_id": 6,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=204",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=205",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=206",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-27T03:57:17.173Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "David L.",
+          "date": "2024-06-26T11:20:57.978Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-18T22:11:03.742Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-12-17T05:59:54.508Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-03-10T03:30:10.638Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 5
+    },
+    {
+      "id": 69,
+      "name": "Classical Landscape",
+      "description": "Bold Photography artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 3594,
+      "discount": 26,
+      "final_price": 2659.56,
+      "category_id": 5,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=207",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=208",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=209",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Anna S.",
+          "date": "2025-01-06T06:19:03.039Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-10T20:44:49.537Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-05-05T08:15:04.250Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Sarah M.",
+          "date": "2025-01-02T03:42:01.455Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 4
+    },
+    {
+      "id": 70,
+      "name": "Minimalist Landscape",
+      "description": "Delicate Charcoal artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 3389,
+      "discount": 0,
+      "final_price": 3389,
+      "category_id": 3,
+      "stock": 5,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=210",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=211",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=212",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2025-01-02T10:23:55.276Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-12-11T04:34:06.657Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "James B.",
+          "date": "2024-09-11T01:36:01.025Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 3
+    },
+    {
+      "id": 71,
+      "name": "Abstract Figure",
+      "description": "Vibrant Clay artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 599,
+      "discount": 0,
+      "final_price": 599,
+      "category_id": 2,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=213",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=214",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=215",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 72,
+      "name": "Contemporary Landscape",
+      "description": "Dramatic Pencil artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 370,
+      "discount": 0,
+      "final_price": 370,
+      "category_id": 4,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=216",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=217",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=218",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "David L.",
+          "date": "2024-03-10T07:00:44.922Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-03-03T08:14:41.811Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-11-16T13:45:01.488Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-12-11T03:19:30.641Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "David L.",
+          "date": "2024-03-07T21:27:57.317Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-04-22T12:47:51.898Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-25T19:10:32.043Z"
+        },
+        {
+          "id": 8,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-06T20:51:42.516Z"
+        }
+      ],
+      "average_rating": 4.1,
+      "review_count": 8
+    },
+    {
+      "id": 73,
+      "name": "Art Nouveau Figure",
+      "description": "Complex Watercolor artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3891,
+      "discount": 0,
+      "final_price": 3891,
+      "category_id": 7,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=219",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=220",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=221",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 74,
+      "name": "Minimalist Mountain",
+      "description": "Intricate Mixed Media artwork in the Mixed Media category, showcasing unique artistic vision and masterful technique.",
+      "price": 2299,
+      "discount": 0,
+      "final_price": 2299,
+      "category_id": 5,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=222",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=223",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=224",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-06-29T14:45:15.225Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2025-01-16T20:03:54.276Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2024-09-23T05:11:40.203Z"
+        }
+      ],
+      "average_rating": 4.7,
+      "review_count": 3
+    },
+    {
+      "id": 75,
+      "name": "Expressionist Still Life",
+      "description": "Whimsical Digital artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3760,
+      "discount": 0,
+      "final_price": 3760,
+      "category_id": 6,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=225",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=226",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=227",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-05-19T11:18:04.251Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-11-06T01:39:08.067Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2024-02-12T00:51:05.734Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-15T09:05:45.350Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-07-24T15:28:58.031Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-06T02:05:15.866Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-05-11T04:09:42.229Z"
+        }
+      ],
+      "average_rating": 4.1,
+      "review_count": 7
+    },
+    {
+      "id": 76,
+      "name": "Impressionist Mountain",
+      "description": "Mystical Ink artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 1298,
+      "discount": 13,
+      "final_price": 1129.26,
+      "category_id": 8,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=228",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=229",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=230",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 77,
+      "name": "Expressionist Architecture",
+      "description": "Ethereal Watercolor artwork in the Paintings category, showcasing unique artistic vision and masterful technique.",
+      "price": 4881,
+      "discount": 16,
+      "final_price": 4100.04,
+      "category_id": 1,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=231",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=232",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=233",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "James B.",
+          "date": "2024-12-02T13:30:13.518Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-10-17T16:33:46.858Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 2
+    },
+    {
+      "id": 78,
+      "name": "Modern Mountain",
+      "description": "Dynamic Pencil artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1415,
+      "discount": 0,
+      "final_price": 1415,
+      "category_id": 6,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=234",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=235",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=236",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-08-26T08:52:35.806Z"
+        }
+      ],
+      "average_rating": 5,
+      "review_count": 1
+    },
+    {
+      "id": 79,
+      "name": "Surreal Still Life",
+      "description": "Intricate Pencil artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 3443,
+      "discount": 0,
+      "final_price": 3443,
+      "category_id": 3,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=237",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=238",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=239",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-06-30T20:14:28.294Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "John D.",
+          "date": "2024-04-24T16:18:43.505Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-03-28T10:17:54.347Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2025-01-29T01:13:36.784Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-02-19T17:42:33.760Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-11-28T19:21:18.025Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 6
+    },
+    {
+      "id": 80,
+      "name": "Minimalist Abstract Composition",
+      "description": "Mystical Watercolor artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 4063,
+      "discount": 0,
+      "final_price": 4063,
+      "category_id": 4,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=240",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=241",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=242",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-28T11:28:55.714Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-10-31T11:53:08.422Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-06-10T15:11:23.424Z"
+        }
+      ],
+      "average_rating": 3.3,
+      "review_count": 3
+    },
+    {
+      "id": 81,
+      "name": "Expressionist City Scene",
+      "description": "Dramatic Watercolor artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3617,
+      "discount": 0,
+      "final_price": 3617,
+      "category_id": 7,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=243",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=244",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=245",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 82,
+      "name": "Contemporary Nature",
+      "description": "Mystical Pastel artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 2498,
+      "discount": 0,
+      "final_price": 2498,
+      "category_id": 6,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=246",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=247",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=248",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-12-16T00:27:00.456Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-05-11T04:35:35.481Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-04T00:00:31.042Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2024-07-04T01:44:49.550Z"
+        }
+      ],
+      "average_rating": 3.8,
+      "review_count": 4
+    },
+    {
+      "id": 83,
+      "name": "Surreal Mountain",
+      "description": "Delicate Ink artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 3248,
+      "discount": 9,
+      "final_price": 2955.68,
+      "category_id": 8,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=249",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=250",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=251",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-13T17:17:08.470Z"
+        }
+      ],
+      "average_rating": 3,
+      "review_count": 1
+    },
+    {
+      "id": 84,
+      "name": "Urban Ocean",
+      "description": "Intricate Pastel artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 1895,
+      "discount": 0,
+      "final_price": 1895,
+      "category_id": 3,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=252",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=253",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=254",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-09T04:53:08.785Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "John D.",
+          "date": "2024-07-14T20:15:05.101Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-31T08:06:20.875Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-12-02T20:22:43.300Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-03-17T19:50:23.678Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-04-16T01:46:47.204Z"
+        },
+        {
+          "id": 7,
+          "rating": 4,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-08-20T18:51:02.448Z"
+        },
+        {
+          "id": 8,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-05-03T12:03:23.898Z"
+        }
+      ],
+      "average_rating": 4.3,
+      "review_count": 8
+    },
+    {
+      "id": 85,
+      "name": "Classical Still Life",
+      "description": "Elegant Digital artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 1392,
+      "discount": 0,
+      "final_price": 1392,
+      "category_id": 7,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=255",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=256",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=257",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-10T16:10:41.278Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-09-26T03:47:21.842Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "David L.",
+          "date": "2024-11-13T01:16:19.553Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-09-06T09:50:49.664Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Emma W.",
+          "date": "2025-01-10T06:47:40.547Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-02-14T18:57:17.736Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-05-14T20:27:54.314Z"
+        },
+        {
+          "id": 8,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-06-14T00:27:09.647Z"
+        }
+      ],
+      "average_rating": 4.1,
+      "review_count": 8
+    },
+    {
+      "id": 86,
+      "name": "Minimalist Forest",
+      "description": "Powerful Digital artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1080,
+      "discount": 0,
+      "final_price": 1080,
+      "category_id": 6,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=258",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=259",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=260",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-02-19T08:06:39.370Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2024-11-16T15:09:58.520Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "James B.",
+          "date": "2024-04-20T15:44:54.310Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-07-02T13:34:22.116Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-10-26T18:45:25.222Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-18T10:08:30.547Z"
+        }
+      ],
+      "average_rating": 4.2,
+      "review_count": 6
+    },
+    {
+      "id": 87,
+      "name": "Modern Nature",
+      "description": "Dynamic Ink artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 3256,
+      "discount": 0,
+      "final_price": 3256,
+      "category_id": 6,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=261",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=262",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=263",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-07T11:03:10.712Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "David L.",
+          "date": "2024-05-04T00:01:44.207Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-12T21:26:48.693Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-03-18T04:14:37.897Z"
+        },
+        {
+          "id": 5,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "John D.",
+          "date": "2024-05-20T16:28:10.825Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-19T03:02:07.266Z"
+        },
+        {
+          "id": 7,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "John D.",
+          "date": "2024-08-26T10:26:49.310Z"
+        }
+      ],
+      "average_rating": 3.9,
+      "review_count": 7
+    },
+    {
+      "id": 88,
+      "name": "Modern Seascape",
+      "description": "Subtle Acrylic artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 684,
+      "discount": 29,
+      "final_price": 485.64,
+      "category_id": 4,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=264",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=265",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=266",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-14T22:53:06.298Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-11-13T18:02:30.617Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 2
+    },
+    {
+      "id": 89,
+      "name": "Contemporary Landscape",
+      "description": "Dynamic Oil artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 3087,
+      "discount": 0,
+      "final_price": 3087,
+      "category_id": 7,
+      "stock": 9,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=267",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=268",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=269",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "John D.",
+          "date": "2024-10-13T10:23:00.264Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-11-09T13:47:27.909Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "David L.",
+          "date": "2024-09-30T16:19:12.692Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "John D.",
+          "date": "2024-09-01T10:48:44.013Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 4
+    },
+    {
+      "id": 90,
+      "name": "Impressionist Nature",
+      "description": "Delicate Ink artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 2025,
+      "discount": 0,
+      "final_price": 2025,
+      "category_id": 4,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=270",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=271",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=272",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-08-11T07:22:35.427Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-03-30T10:51:04.836Z"
+        },
+        {
+          "id": 3,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2024-05-17T05:00:51.499Z"
+        },
+        {
+          "id": 4,
+          "rating": 5,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-07-13T13:12:06.877Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "John D.",
+          "date": "2024-12-06T16:29:00.469Z"
+        },
+        {
+          "id": 6,
+          "rating": 4,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-06-30T01:39:23.840Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 6
+    },
+    {
+      "id": 91,
+      "name": "Folk Art Forest",
+      "description": "Bold Photography artwork in the Portrait category, showcasing unique artistic vision and masterful technique.",
+      "price": 4787,
+      "discount": 17,
+      "final_price": 3973.21,
+      "category_id": 8,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=273",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=274",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=275",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "James B.",
+          "date": "2024-11-29T06:32:35.635Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-11-21T11:04:10.617Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2025-01-03T10:11:16.970Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-02-19T03:56:25.507Z"
+        }
+      ],
+      "average_rating": 4.5,
+      "review_count": 4
+    },
+    {
+      "id": 92,
+      "name": "Expressionist Landscape",
+      "description": "Ethereal Ink artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 2018,
+      "discount": 0,
+      "final_price": 2018,
+      "category_id": 4,
+      "stock": 10,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=276",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=277",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=278",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "James B.",
+          "date": "2024-09-19T17:48:24.575Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Impressive work that shows great attention to detail.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-04-09T04:05:44.046Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-08-30T11:28:49.072Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Lisa K.",
+          "date": "2025-01-16T13:12:15.171Z"
+        },
+        {
+          "id": 5,
+          "rating": 4,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-02-28T18:11:10.518Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Beautiful artwork that exceeded my expectations. Shipping was fast and secure.",
+          "reviewer_name": "Maria C.",
+          "date": "2025-01-29T23:32:28.084Z"
+        },
+        {
+          "id": 7,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-06-16T00:19:51.546Z"
+        },
+        {
+          "id": 8,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-02-16T02:58:18.748Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 8
+    },
+    {
+      "id": 93,
+      "name": "Baroque Seascape",
+      "description": "Elegant Pastel artwork in the Sculptures category, showcasing unique artistic vision and masterful technique.",
+      "price": 1194,
+      "discount": 23,
+      "final_price": 919.38,
+      "category_id": 4,
+      "stock": 8,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=279",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=280",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=281",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-09-19T04:13:00.157Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Robert P.",
+          "date": "2025-01-22T17:45:35.802Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "Emma W.",
+          "date": "2025-01-11T02:34:29.345Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-02-20T20:33:50.315Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 4
+    },
+    {
+      "id": 94,
+      "name": "Expressionist City Scene",
+      "description": "Delicate Glass artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 1631,
+      "discount": 0,
+      "final_price": 1631,
+      "category_id": 3,
+      "stock": 2,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=282",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=283",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=284",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-07-22T21:00:04.396Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-03-01T01:29:59.181Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "The colors and composition are perfectly balanced.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-08-26T09:44:49.779Z"
+        }
+      ],
+      "average_rating": 4,
+      "review_count": 3
+    },
+    {
+      "id": 95,
+      "name": "Gothic Abstract Composition",
+      "description": "Serene Pastel artwork in the Drawings category, showcasing unique artistic vision and masterful technique.",
+      "price": 1963,
+      "discount": 0,
+      "final_price": 1963,
+      "category_id": 6,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=285",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=286",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=287",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    },
+    {
+      "id": 96,
+      "name": "Pop Art Nature",
+      "description": "Complex Clay artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 1760,
+      "discount": 0,
+      "final_price": 1760,
+      "category_id": 2,
+      "stock": 4,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=288",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=289",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=290",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Maria C.",
+          "date": "2024-08-11T10:30:32.027Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
+          "reviewer_name": "John D.",
+          "date": "2024-03-19T11:52:45.093Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-08-14T16:52:36.383Z"
+        }
+      ],
+      "average_rating": 3.3,
+      "review_count": 3
+    },
+    {
+      "id": 97,
+      "name": "Pop Art Landscape",
+      "description": "Bold Metal artwork in the Abstract category, showcasing unique artistic vision and masterful technique.",
+      "price": 4207,
+      "discount": 9,
+      "final_price": 3828.37,
+      "category_id": 7,
+      "stock": 1,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=291",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=292",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=293",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-03-09T16:11:19.560Z"
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Sarah M.",
+          "date": "2024-12-11T04:58:33.481Z"
+        },
+        {
+          "id": 3,
+          "rating": 5,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-12-02T09:23:32.117Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Anna S.",
+          "date": "2024-05-11T08:46:23.916Z"
+        }
+      ],
+      "average_rating": 4.8,
+      "review_count": 4
+    },
+    {
+      "id": 98,
+      "name": "Abstract Portrait",
+      "description": "Ethereal Glass artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 640,
+      "discount": 0,
+      "final_price": 640,
+      "category_id": 3,
+      "stock": 3,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=294",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=295",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=296",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2025-01-27T05:50:24.977Z"
+        },
+        {
+          "id": 2,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-04-24T12:15:23.916Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "A wonderful piece that brings joy every time I look at it.",
+          "reviewer_name": "James B.",
+          "date": "2024-10-28T23:21:41.975Z"
+        },
+        {
+          "id": 4,
+          "rating": 3,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "Michael R.",
+          "date": "2024-10-03T01:13:01.646Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-09-18T00:12:29.223Z"
+        },
+        {
+          "id": 6,
+          "rating": 5,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-06-02T11:19:58.262Z"
+        }
+      ],
+      "average_rating": 3.7,
+      "review_count": 6
+    },
+    {
+      "id": 99,
+      "name": "Classical Architecture",
+      "description": "Dynamic Ink artwork in the Photography category, showcasing unique artistic vision and masterful technique.",
+      "price": 1386,
+      "discount": 18,
+      "final_price": 1136.52,
+      "category_id": 3,
+      "stock": 6,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=297",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=298",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=299",
+          "is_primary": false
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "James B.",
+          "date": "2024-03-13T22:18:50.276Z"
+        },
+        {
+          "id": 2,
+          "rating": 4,
+          "comment": "A masterpiece that brings life to my living room. Very happy with this purchase.",
+          "reviewer_name": "James B.",
+          "date": "2024-02-02T02:02:25.614Z"
+        },
+        {
+          "id": 3,
+          "rating": 3,
+          "comment": "Unique and captivating piece. The artist's talent really shines through.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-12-25T12:46:11.089Z"
+        },
+        {
+          "id": 4,
+          "rating": 4,
+          "comment": "Great addition to my collection. The craftsmanship is outstanding.",
+          "reviewer_name": "Lisa K.",
+          "date": "2024-10-11T12:43:48.459Z"
+        },
+        {
+          "id": 5,
+          "rating": 3,
+          "comment": "The quality is exceptional. Even better in person than in the photos.",
+          "reviewer_name": "Emma W.",
+          "date": "2024-11-01T18:41:02.110Z"
+        },
+        {
+          "id": 6,
+          "rating": 3,
+          "comment": "Love the artistic style and technique. A real conversation starter.",
+          "reviewer_name": "Robert P.",
+          "date": "2024-08-03T13:25:40.085Z"
+        }
+      ],
+      "average_rating": 3.5,
+      "review_count": 6
+    },
+    {
+      "id": 100,
+      "name": "Minimalist City Scene",
+      "description": "Intricate Oil artwork in the Digital Art category, showcasing unique artistic vision and masterful technique.",
+      "price": 3594,
+      "discount": 0,
+      "final_price": 3594,
+      "category_id": 2,
+      "stock": 7,
+      "images": [
+        {
+          "url": "https://picsum.photos/800/600?random=300",
+          "is_primary": true
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=301",
+          "is_primary": false
+        },
+        {
+          "url": "https://picsum.photos/800/600?random=302",
+          "is_primary": false
+        }
+      ],
+      "reviews": [],
+      "average_rating": 0,
+      "review_count": 0
+    }
+  ]
+}

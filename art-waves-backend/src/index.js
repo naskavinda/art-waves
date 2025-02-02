@@ -1,6 +1,7 @@
 const express = require("express");
-const authRoutes = require("./routes/auth");
 const cors = require("cors");
+const authRoutes = require("./routes/auth");
+const productRoutes = require("./routes/products");
 require("dotenv").config();
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
 
 // Basic route
 app.get("/", (req, res) => {

@@ -1,186 +1,235 @@
 # Art Waves Backend API
 
-This is the backend API for Art Waves application with authentication endpoints.
+## Overview
+Art Waves is a modern e-commerce platform for art enthusiasts. This backend API provides endpoints for managing products, categories, reviews, and user authentication.
 
 ## Getting Started
 
-1. Install dependencies:
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/art-waves-backend.git
+
+# Install dependencies
 npm install
-```
 
-2. Create a `.env` file in the root directory with the following content:
-```env
-PORT=3000
-JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-```
-
-3. Start the development server:
-```bash
+# Start the development server
 npm run dev
 ```
 
-## Authentication Endpoints
+## API Documentation
 
-### 1. Sign Up
-Create a new user account.
+### Products
 
-- **URL**: `/api/auth/signup`
-- **Method**: `POST`
-- **Content-Type**: `application/json`
+#### Advanced Product Filtering
+```http
+POST /api/products/filter
+Content-Type: application/json
+```
 
-**Request Body**:
-```json
+All filter parameters are optional. The endpoint will only apply filters that are provided and valid.
+
+**Request Body Parameters:**
+```javascript
 {
-    "email": "user@example.com",
-    "password": "yourpassword",
-    "firstname": "John",
-    "lastname": "Doe",
-    "imageUrl": "https://example.com/profile.jpg" // Optional
+  // Pagination (optional, defaults provided)
+  "page": 1,        // Default: 1
+  "limit": 10,      // Default: 10, Max: 50
+
+  // Category Filter (optional)
+  "categories": [1, 2],  // Array of category IDs
+
+  // Price Filter (optional)
+  "price": {
+    "min": 100,    // Optional minimum price
+    "max": 1000    // Optional maximum price
+  },
+
+  // Discount Filter (optional)
+  "discount": {
+    "min": 10,     // Optional minimum discount percentage
+    "max": 30      // Optional maximum discount percentage
+  },
+
+  // Rating Filter (optional)
+  "rating": 4,     // Minimum rating threshold
+
+  // Sorting (optional)
+  "sortBy": "price",    // Options: "id", "price", "name", "rating", "discount"
+  "sortOrder": "desc",  // Options: "asc", "desc", Default: "asc"
+
+  // Search (optional)
+  "search": "abstract"  // Search in name and description
 }
 ```
 
-**Success Response**:
-- **Code**: 201 Created
-- **Content**:
-```json
+**Response Format:**
+```javascript
 {
-    "token": "jwt-token-here",
-    "user": {
-        "id": 1,
-        "email": "user@example.com",
-        "firstname": "John",
-        "lastname": "Doe",
-        "imageUrl": "https://example.com/profile.jpg"
+  "products": [
+    {
+      "id": 1,
+      "name": "Abstract Composition",
+      "description": "Beautiful abstract artwork...",
+      "price": 899.99,
+      "discount": 15,
+      "final_price": 764.99,
+      "category_id": 1,
+      "stock": 5,
+      "average_rating": 4.5,
+      "review_count": 12,
+      "images": [
+        {
+          "url": "https://example.com/image1.jpg",
+          "is_primary": true
+        }
+      ]
     }
+  ],
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 5,
+    "totalItems": 48,
+    "itemsPerPage": 10
+  },
+  "filters": {
+    // Only includes filters that were actually applied
+    "categories": [1, 2],
+    "price": {
+      "min": 100,
+      "max": 1000
+    },
+    "rating": 4,
+    "sortBy": "price",
+    "sortOrder": "desc"
+  }
 }
 ```
 
-**Error Responses**:
-- **Code**: 400 Bad Request
-  ```json
-  {
-      "error": "Email, password, firstname, and lastname are required"
-  }
-  ```
-- **Code**: 400 Bad Request
-  ```json
-  {
-      "error": "Invalid email format"
-  }
-  ```
-- **Code**: 400 Bad Request
-  ```json
-  {
-      "error": "Password must be at least 6 characters long"
-  }
-  ```
-- **Code**: 409 Conflict
-  ```json
-  {
-      "error": "User already exists with this email. Please login instead."
-  }
-  ```
+### Filter Examples
 
-### 2. Login
-Login with existing credentials.
-
-- **URL**: `/api/auth/login`
-- **Method**: `POST`
-- **Content-Type**: `application/json`
-
-**Request Body**:
+#### 1. Basic Pagination (No Filters)
 ```json
 {
-    "email": "user@example.com",     // You can use either email or username
-    "username": "user@example.com",  // Both fields work the same way
-    "password": "yourpassword"
+  "page": 1,
+  "limit": 10
 }
 ```
 
-**Success Response**:
-- **Code**: 200 OK
-- **Content**:
+#### 2. Price Range Only
 ```json
 {
-    "token": "jwt-token-here",
-    "user": {
-        "id": 1,
-        "email": "user@example.com",
-        "firstname": "John",
-        "lastname": "Doe",
-        "imageUrl": "https://example.com/profile.jpg"
-    }
+  "price": {
+    "max": 500
+  }
 }
 ```
 
-**Error Responses**:
-- **Code**: 400 Bad Request
-  ```json
-  {
-      "error": "Email/username and password are required"
-  }
-  ```
-- **Code**: 401 Unauthorized
-  ```json
-  {
-      "error": "Invalid credentials"
-  }
-  ```
-
-### 3. Get Current User
-Get information about the currently logged-in user.
-
-- **URL**: `/api/auth/me`
-- **Method**: `GET`
-- **Headers Required**: 
-  - `Authorization: Bearer your-jwt-token`
-
-**Success Response**:
-- **Code**: 200 OK
-- **Content**:
+#### 3. Category and Rating
 ```json
 {
-    "id": 1,
-    "email": "user@example.com",
-    "firstname": "John",
-    "lastname": "Doe",
-    "imageUrl": "https://example.com/profile.jpg",
-    "createdAt": "2024-02-02T10:30:00.000Z"
+  "categories": [1],
+  "rating": 4
 }
 ```
 
-**Error Response**:
-- **Code**: 401 Unauthorized
-  ```json
-  {
-      "error": "Please authenticate."
-  }
-  ```
+#### 4. Search with Sort
+```json
+{
+  "search": "abstract",
+  "sortBy": "price",
+  "sortOrder": "desc"
+}
+```
 
-## Authentication Flow
+#### 5. Multiple Filters
+```json
+{
+  "categories": [1, 2],
+  "price": {
+    "min": 100,
+    "max": 1000
+  },
+  "rating": 4,
+  "sortBy": "rating",
+  "sortOrder": "desc"
+}
+```
 
-1. **Sign Up**:
-   - Call the signup endpoint with required user details
-   - Store the returned JWT token and user information
+### Filter Behavior
 
-2. **Login**:
-   - Call the login endpoint with email and password
-   - Store the returned JWT token and user information
+1. **Missing Parameters**
+   - Any missing filter parameter will be ignored
+   - The API will return all products that match the provided filters only
+   - Pagination defaults will still apply
 
-3. **Authenticated Requests**:
-   - Add the JWT token to the Authorization header
-   - Format: `Authorization: Bearer your-jwt-token`
+2. **Invalid Values**
+   - Invalid category IDs are ignored
+   - Invalid numeric values are ignored
+   - Invalid sort fields default to 'id'
+   - Invalid sort order defaults to 'asc'
 
-4. **Logout**:
-   - Client-side: Remove the stored JWT token and user information
-   - No server-side endpoint needed as JWT is stateless
+3. **Empty or Partial Filters**
+   - Empty category arrays are ignored
+   - Price ranges can have either min, max, or both
+   - Discount ranges can have either min, max, or both
+   - Empty search strings are ignored
 
-## Security Notes
+4. **Response Format**
+   - The `filters` object in the response only includes filters that were actually applied
+   - Pagination info is always included
+   - Products are always sorted (by id if no sort specified)
 
-1. All passwords are hashed using bcrypt before storage
-2. JWT tokens include user's basic information (id, email, firstname, lastname)
-3. Password must be at least 6 characters long
-4. Email format is validated
-5. All endpoints use HTTPS in production
-6. Change the JWT_SECRET in production to a strong, unique value
+### Other Endpoints
+
+#### Get Product Details
+```http
+GET /api/products/:id
+```
+
+#### Get Product Reviews
+```http
+GET /api/products/:id/reviews
+```
+
+#### Add Product Review
+```http
+POST /api/products/:id/reviews
+Content-Type: application/json
+
+{
+  "rating": 5,
+  "comment": "Beautiful artwork!",
+  "reviewer_name": "Jane Smith"
+}
+```
+
+## Error Handling
+
+The API uses standard HTTP status codes:
+- 200: Success
+- 400: Bad Request (invalid input)
+- 404: Not Found
+- 500: Server Error
+
+Error Response Format:
+```json
+{
+  "error": "Error message",
+  "details": "Detailed error description"
+}
+```
+
+## Development
+
+### Scripts
+- `npm run dev`: Start development server
+- `npm run seed`: Generate sample data
+- `npm test`: Run tests
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
