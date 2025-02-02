@@ -1,11 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
 import { useGetCategoriesQuery, useGetProductsByFilterMutation, FilterParams, Product } from '../../services/productApi';
 import { debounce } from 'lodash';
-import { FaStar } from 'react-icons/fa';
+import { FaStar, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToWishlist, removeFromWishlist } from '../../store/features/wishlistSlice';
+import { addToCart } from '../../store/features/cartSlice';
+import { RootState } from '../../store/store';
 
 const ITEMS_PER_PAGE = 12;
 
 export const ProductListing = () => {
+    const dispatch = useDispatch();
+    const wishlistItems = useSelector((state: RootState) => state.wishlist.items);
+
     const [filters, setFilters] = useState<FilterParams>({
         page: 1,
         limit: ITEMS_PER_PAGE,
@@ -19,12 +26,30 @@ export const ProductListing = () => {
     const [products, setProducts] = useState<Product[]>([]);
     const [hasMore, setHasMore] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
+    const [loadingImages, setLoadingImages] = useState<{ [key: number]: boolean }>({});
 
     const { data: categoriesData } = useGetCategoriesQuery();
     const [getProducts] = useGetProductsByFilterMutation();
 
     const observer = useRef<IntersectionObserver>();
     const lastProductRef = useRef<HTMLDivElement>(null);
+
+    const handleImageLoad = (productId: number) => {
+        setLoadingImages(prev => ({ ...prev, [productId]: false }));
+    };
+
+    const handleImageError = (productId: number) => {
+        setLoadingImages(prev => ({ ...prev, [productId]: false }));
+    };
+
+    useEffect(() => {
+        // Initialize loading state for all product images
+        const newLoadingState = products.reduce((acc, product) => {
+            acc[product.id] = true;
+            return acc;
+        }, {} as { [key: number]: boolean });
+        setLoadingImages(newLoadingState);
+    }, [products]);
 
     // Debounced search function
     const debouncedSearch = debounce((searchTerm: string) => {
@@ -74,7 +99,16 @@ export const ProductListing = () => {
         setIsLoading(true);
         try {
             const response = await getProducts(filters).unwrap();
-            setProducts(prev => [...prev, ...response.products]);
+            setProducts(prev => {
+                // Create a Map of existing products using their IDs
+                const existingProducts = new Map(prev.map(p => [p.id, p]));
+                
+                // Add new products, overwriting any duplicates
+                response.products.forEach(p => existingProducts.set(p.id, p));
+                
+                // Convert Map back to array
+                return Array.from(existingProducts.values());
+            });
             setHasMore(response.pagination.currentPage < response.pagination.totalPages);
         } catch (error) {
             console.error('Error fetching products:', error);
@@ -201,59 +235,86 @@ export const ProductListing = () => {
 
                 {/* Products Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {products.map((product, index) => (
-                        <div
-                            key={product.id}
-                            ref={index === products.length - 1 ? lastProductRef : null}
-                            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-                        >
-                            <div className="relative pb-[100%]">
-                                <img
-                                    src={product.images.find(img => img.is_primary)?.url}
-                                    alt={product.name}
-                                    className="absolute inset-0 w-full h-full object-cover"
-                                />
-                                {product.discount > 0 && (
-                                    <div className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-md text-sm">
-                                        {product.discount}% OFF
-                                    </div>
-                                )}
-                            </div>
-                            <div className="p-4">
-                                <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h3>
-                                <div className="flex items-center mb-2">
-                                    <div className="flex text-yellow-400">
-                                        {[...Array(5)].map((_, i) => (
-                                            <FaStar
-                                                key={i}
-                                                className={`w-4 h-4 ${
-                                                    i < Math.floor(product.average_rating)
-                                                        ? 'text-yellow-400'
-                                                        : 'text-gray-300'
-                                                }`}
-                                            />
-                                        ))}
-                                    </div>
-                                    <span className="text-sm text-gray-500 ml-2">({product.review_count})</span>
-                                </div>
-                                <div className="flex items-center justify-between">
-                                    <div>
-                                        {product.discount > 0 && (
-                                            <span className="text-sm text-gray-500 line-through mr-2">
-                                                ${product.price}
-                                            </span>
-                                        )}
-                                        <span className="text-lg font-bold text-indigo-600">
-                                            ${product.final_price}
-                                        </span>
-                                    </div>
-                                    <button className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors duration-300">
-                                        Add to Cart
+                    {products.map((product, index) => {
+                        const isInWishlist = wishlistItems.some(item => item.id === product.id);
+                        return (
+                            <div
+                                key={product.id}
+                                ref={index === products.length - 1 ? lastProductRef : null}
+                                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                            >
+                                <div className="relative pb-[100%]">
+                                    {loadingImages[product.id] && (
+                                        <div className="absolute inset-0 bg-gray-200 animate-pulse"></div>
+                                    )}
+                                    <img
+                                        src={product.images.find(img => img.is_primary)?.url}
+                                        alt={product.name}
+                                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
+                                            loadingImages[product.id] ? 'opacity-0' : 'opacity-100'
+                                        }`}
+                                        onLoad={() => handleImageLoad(product.id)}
+                                        onError={() => handleImageError(product.id)}
+                                    />
+                                    <button
+                                        onClick={() => isInWishlist 
+                                            ? dispatch(removeFromWishlist(product.id))
+                                            : dispatch(addToWishlist(product))
+                                        }
+                                        className={`absolute top-2 left-2 p-2 rounded-full transition-colors duration-300 ${
+                                            isInWishlist 
+                                                ? 'bg-red-500 text-white' 
+                                                : 'bg-white text-gray-600 hover:text-red-500'
+                                        }`}
+                                    >
+                                        <FaHeart className="w-5 h-5" />
                                     </button>
+                                    {product.discount > 0 && (
+                                        <div className="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-md text-sm">
+                                            {product.discount}% OFF
+                                        </div>
+                                    )}
+                                </div>
+                                <div className="p-4">
+                                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{product.name}</h3>
+                                    <div className="flex items-center mb-2">
+                                        <div className="flex text-yellow-400">
+                                            {[...Array(5)].map((_, i) => (
+                                                <FaStar
+                                                    key={i}
+                                                    className={`w-4 h-4 ${
+                                                        i < Math.floor(product.average_rating)
+                                                            ? 'text-yellow-400'
+                                                            : 'text-gray-300'
+                                                    }`}
+                                                />
+                                            ))}
+                                        </div>
+                                        <span className="text-sm text-gray-500 ml-2">({product.review_count})</span>
+                                    </div>
+                                    <div className="mt-4">
+                                        <div className="flex items-center mb-3">
+                                            {product.discount > 0 && (
+                                                <span className="text-sm text-gray-500 line-through mr-2">
+                                                    ${product.price}
+                                                </span>
+                                            )}
+                                            <span className="text-xl font-bold text-indigo-600">
+                                                ${product.final_price}
+                                            </span>
+                                        </div>
+                                        <button 
+                                            onClick={() => dispatch(addToCart(product))}
+                                            className="w-full flex items-center justify-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+                                        >
+                                            <FaShoppingCart className="w-4 h-4" />
+                                            <span>Add to Cart</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
 
                 {/* Loading State */}

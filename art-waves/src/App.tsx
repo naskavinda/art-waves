@@ -8,9 +8,6 @@ function App() {
       <main>
         <Outlet/>
       </main>
-      <div className="text-3xl text-red-500">
-        Hi world!
-      </div>
     </>
   )
 }

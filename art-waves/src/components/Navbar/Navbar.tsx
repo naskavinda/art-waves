@@ -3,13 +3,15 @@ import { Link, useNavigate } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store/store';
 import { logout } from '../../slices/authSlice';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 export const Navbar = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { isAuthenticated, user } = useSelector((state: RootState) => state.auth);
+    const cartItems = useSelector((state: RootState) => state.cart.items);
+    const wishlistItems = useSelector((state: RootState) => state.wishlist.items);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
     const profileDropdownRef = useRef<HTMLDivElement>(null);
@@ -67,8 +69,21 @@ export const Navbar = () => {
 
                     {/* Right side items */}
                     <div className="hidden sm:flex sm:items-center sm:space-x-4">
-                        <Link to="/cart" className="text-gray-600 hover:text-indigo-600 p-2 rounded-full transition duration-150">
+                        <Link to="/wishlist" className="text-gray-600 hover:text-indigo-600 p-2 rounded-full transition duration-150 relative">
+                            <FaHeart className="h-6 w-6" />
+                            {wishlistItems.length > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                                    {wishlistItems.length}
+                                </span>
+                            )}
+                        </Link>
+                        <Link to="/cart" className="text-gray-600 hover:text-indigo-600 p-2 rounded-full transition duration-150 relative">
                             <FaShoppingCart className="h-6 w-6" />
+                            {cartItems.length > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                                    {cartItems.length}
+                                </span>
+                            )}
                         </Link>
 
                         {isAuthenticated ? (
