@@ -14,7 +14,24 @@ export const Navbar = () => {
     const wishlistItems = useSelector((state: RootState) => state.wishlist.items);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+    const [dropdownPosition, setDropdownPosition] = useState({ top: '64px', right: '0px' });
     const profileDropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const updatePosition = () => {
+            if (profileDropdownRef.current && isProfileDropdownOpen) {
+                const rect = profileDropdownRef.current.getBoundingClientRect();
+                setDropdownPosition({
+                    top: '64px',
+                    right: `${window.innerWidth - rect.right}px`
+                });
+            }
+        };
+
+        updatePosition();
+        window.addEventListener('resize', updatePosition);
+        return () => window.removeEventListener('resize', updatePosition);
+    }, [isProfileDropdownOpen]);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
@@ -106,7 +123,15 @@ export const Navbar = () => {
                                 </button>
 
                                 {isProfileDropdownOpen && (
-                                    <div className="absolute right-0 mt-2 w-64 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100">
+                                    <div 
+                                        style={{
+                                            position: 'fixed',
+                                            top: dropdownPosition.top,
+                                            right: dropdownPosition.right,
+                                            transform: 'translateX(0)',
+                                        }}
+                                        className="w-64 rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 z-50"
+                                    >
                                         <div className="px-4 py-4">
                                             <div className="flex items-center space-x-3">
                                                 {user?.imageUrl ? (

@@ -35,8 +35,8 @@ export interface FilterParams {
   page: number;
   limit: number;
   categories?: number[];
-  price?: PriceRange;
-  discount?: PriceRange;
+  price: PriceRange;
+  discount: PriceRange;
   rating?: number;
   sortBy?: string;
   sortOrder?: 'asc' | 'desc';

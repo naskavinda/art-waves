@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { useGetCategoriesQuery, useGetProductsByFilterMutation, FilterParams, Product } from '../../services/productApi';
 import { debounce } from 'lodash';
 import { FaStar, FaHeart, FaShoppingCart } from 'react-icons/fa';
@@ -20,13 +20,15 @@ export const ProductListing = () => {
         price: { min: 0, max: 10000 },
         discount: { min: 0, max: 100 },
         sortBy: 'price',
-        sortOrder: 'desc'
+        sortOrder: 'desc',
+        rating: 0
     });
     const [search, setSearch] = useState('');
     const [products, setProducts] = useState<Product[]>([]);
     const [hasMore, setHasMore] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const [loadingImages, setLoadingImages] = useState<{ [key: number]: boolean }>({});
+    const [imageCache, setImageCache] = useState<{ [key: string]: boolean }>({});
 
     const { data: categoriesData } = useGetCategoriesQuery();
     const [getProducts] = useGetProductsByFilterMutation();
@@ -34,22 +36,29 @@ export const ProductListing = () => {
     const observer = useRef<IntersectionObserver>();
     const lastProductRef = useRef<HTMLDivElement>(null);
 
-    const handleImageLoad = (productId: number) => {
+    const handleImageLoad = useCallback((productId: number, imageUrl: string) => {
         setLoadingImages(prev => ({ ...prev, [productId]: false }));
-    };
+        setImageCache(prev => ({ ...prev, [imageUrl]: true }));
+    }, []);
 
-    const handleImageError = (productId: number) => {
+    const handleImageError = useCallback((productId: number) => {
         setLoadingImages(prev => ({ ...prev, [productId]: false }));
-    };
+    }, []);
 
     useEffect(() => {
         // Initialize loading state for all product images
         const newLoadingState = products.reduce((acc, product) => {
-            acc[product.id] = true;
+            const imageUrl = product.images.find(img => img.is_primary)?.url;
+            // Only set loading to true if image is not cached
+            acc[product.id] = imageUrl ? !imageCache[imageUrl] : true;
             return acc;
         }, {} as { [key: number]: boolean });
-        setLoadingImages(newLoadingState);
-    }, [products]);
+        
+        setLoadingImages(prev => ({
+            ...prev,
+            ...newLoadingState
+        }));
+    }, [products, imageCache]);
 
     // Debounced search function
     const debouncedSearch = debounce((searchTerm: string) => {
@@ -89,7 +98,12 @@ export const ProductListing = () => {
 
     // Handle rating change
     const handleRatingChange = (rating: number) => {
-        setFilters(prev => ({ ...prev, page: 1, rating }));
+        // If clicking the same rating or setting to 0, clear the filter
+        if (rating === filters.rating || rating === 0) {
+            setFilters(prev => ({ ...prev, page: 1, rating: 0 }));
+        } else {
+            setFilters(prev => ({ ...prev, page: 1, rating }));
+        }
         setProducts([]); // Reset products when rating changes
     };
 
@@ -165,57 +179,197 @@ export const ProductListing = () => {
                     </div>
 
                     {/* Price Range */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-3">Price Range</h3>
-                        <div className="space-y-2">
-                            <input
-                                type="range"
-                                min="0"
-                                max="10000"
-                                value={filters.price?.min}
-                                onChange={(e) => handlePriceChange(Number(e.target.value), filters.price?.max || 10000)}
-                                className="w-full"
-                            />
-                            <div className="flex justify-between text-sm text-gray-600">
-                                <span>${filters.price?.min}</span>
-                                <span>${filters.price?.max}</span>
+                    <div className="mb-6">
+                        <h3 className="text-lg font-semibold mb-4">Price Range</h3>
+                        <div className="space-y-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1">
+                                    <label className="block text-sm text-gray-600 mb-1">Min ($)</label>
+                                    <input
+                                        type="number"
+                                        value={filters.price?.min ?? 0}
+                                        onChange={(e) => {
+                                            const value = parseInt(e.target.value) || 0;
+                                            handlePriceChange(value, filters.price?.max ?? 10000);
+                                        }}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        min="0"
+                                    />
+                                </div>
+                                <div className="flex-1">
+                                    <label className="block text-sm text-gray-600 mb-1">Max ($)</label>
+                                    <input
+                                        type="number"
+                                        value={filters.price?.max ?? 10000}
+                                        onChange={(e) => {
+                                            const value = Math.max(filters.price?.min ?? 0, parseInt(e.target.value) || 0);
+                                            handlePriceChange(filters.price?.min ?? 0, value);
+                                        }}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        min={filters.price?.min ?? 0}
+                                    />
+                                </div>
+                            </div>
+                            <div className="px-2">
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="10000"
+                                    value={filters.price?.min ?? 0}
+                                    onChange={(e) => handlePriceChange(parseInt(e.target.value), filters.price?.max ?? 10000)}
+                                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer 
+                                    [&::-webkit-slider-thumb]:w-4 
+                                    [&::-webkit-slider-thumb]:h-4 
+                                    [&::-webkit-slider-thumb]:bg-indigo-600 
+                                    [&::-webkit-slider-thumb]:rounded-full 
+                                    [&::-webkit-slider-thumb]:appearance-none
+                                    [&::-webkit-slider-thumb]:hover:bg-indigo-700
+                                    [&::-moz-range-thumb]:w-4 
+                                    [&::-moz-range-thumb]:h-4 
+                                    [&::-moz-range-thumb]:bg-indigo-600 
+                                    [&::-moz-range-thumb]:border-0 
+                                    [&::-moz-range-thumb]:rounded-full
+                                    [&::-moz-range-thumb]:hover:bg-indigo-700"
+                                />
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="10000"
+                                    value={filters.price?.max ?? 10000}
+                                    onChange={(e) => handlePriceChange(filters.price?.min ?? 0, parseInt(e.target.value))}
+                                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer 
+                                    [&::-webkit-slider-thumb]:w-4 
+                                    [&::-webkit-slider-thumb]:h-4 
+                                    [&::-webkit-slider-thumb]:bg-indigo-600 
+                                    [&::-webkit-slider-thumb]:rounded-full 
+                                    [&::-webkit-slider-thumb]:appearance-none
+                                    [&::-webkit-slider-thumb]:hover:bg-indigo-700
+                                    [&::-moz-range-thumb]:w-4 
+                                    [&::-moz-range-thumb]:h-4 
+                                    [&::-moz-range-thumb]:bg-indigo-600 
+                                    [&::-moz-range-thumb]:border-0 
+                                    [&::-moz-range-thumb]:rounded-full
+                                    [&::-moz-range-thumb]:hover:bg-indigo-700"
+                                />
                             </div>
                         </div>
                     </div>
 
                     {/* Discount Range */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-3">Discount</h3>
-                        <div className="space-y-2">
-                            <input
-                                type="range"
-                                min="0"
-                                max="100"
-                                value={filters.discount?.min}
-                                onChange={(e) => handleDiscountChange(Number(e.target.value), filters.discount?.max || 100)}
-                                className="w-full"
-                            />
-                            <div className="flex justify-between text-sm text-gray-600">
-                                <span>{filters.discount?.min}%</span>
-                                <span>{filters.discount?.max}%</span>
+                    <div className="mb-6">
+                        <h3 className="text-lg font-semibold mb-4">Discount Range (%)</h3>
+                        <div className="space-y-4">
+                            <div className="flex items-center space-x-4">
+                                <div className="flex-1">
+                                    <label className="block text-sm text-gray-600 mb-1">Min (%)</label>
+                                    <input
+                                        type="number"
+                                        value={filters.discount.min}
+                                        onChange={(e) => {
+                                            const value = Math.max(0, Math.min(100, parseInt(e.target.value) || 0));
+                                            handleDiscountChange(value, filters.discount.max);
+                                        }}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        min="0"
+                                        max="100"
+                                    />
+                                </div>
+                                <div className="flex-1">
+                                    <label className="block text-sm text-gray-600 mb-1">Max (%)</label>
+                                    <input
+                                        type="number"
+                                        value={filters.discount.max}
+                                        onChange={(e) => {
+                                            const value = Math.max(filters.discount.min, Math.min(100, parseInt(e.target.value) || filters.discount.min));
+                                            handleDiscountChange(filters.discount.min, value);
+                                        }}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                                        min={filters.discount.min}
+                                        max="100"
+                                    />
+                                </div>
+                            </div>
+                            <div className="px-2">
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value={filters.discount.min}
+                                    onChange={(e) => handleDiscountChange(parseInt(e.target.value), filters.discount.max)}
+                                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer 
+                                    [&::-webkit-slider-thumb]:w-4 
+                                    [&::-webkit-slider-thumb]:h-4 
+                                    [&::-webkit-slider-thumb]:bg-indigo-600 
+                                    [&::-webkit-slider-thumb]:rounded-full 
+                                    [&::-webkit-slider-thumb]:appearance-none
+                                    [&::-webkit-slider-thumb]:hover:bg-indigo-700
+                                    [&::-moz-range-thumb]:w-4 
+                                    [&::-moz-range-thumb]:h-4 
+                                    [&::-moz-range-thumb]:bg-indigo-600 
+                                    [&::-moz-range-thumb]:border-0 
+                                    [&::-moz-range-thumb]:rounded-full
+                                    [&::-moz-range-thumb]:hover:bg-indigo-700"
+                                />
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value={filters.discount.max}
+                                    onChange={(e) => handleDiscountChange(filters.discount.min, parseInt(e.target.value))}
+                                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer 
+                                    [&::-webkit-slider-thumb]:w-4 
+                                    [&::-webkit-slider-thumb]:h-4 
+                                    [&::-webkit-slider-thumb]:bg-indigo-600 
+                                    [&::-webkit-slider-thumb]:rounded-full 
+                                    [&::-webkit-slider-thumb]:appearance-none
+                                    [&::-webkit-slider-thumb]:hover:bg-indigo-700
+                                    [&::-moz-range-thumb]:w-4 
+                                    [&::-moz-range-thumb]:h-4 
+                                    [&::-moz-range-thumb]:bg-indigo-600 
+                                    [&::-moz-range-thumb]:border-0 
+                                    [&::-moz-range-thumb]:rounded-full
+                                    [&::-moz-range-thumb]:hover:bg-indigo-700"
+                                />
                             </div>
                         </div>
                     </div>
 
-                    {/* Rating */}
-                    <div>
-                        <h3 className="text-lg font-semibold mb-3">Rating</h3>
-                        <div className="flex space-x-2">
+                    {/* Rating Filter */}
+                    <div className="mb-6">
+                        <div className="flex items-center justify-between mb-3">
+                            <h3 className="text-lg font-semibold">Rating</h3>
+                            {(filters?.rating ?? 0) > 0 && (
+                                <button
+                                    onClick={() => handleRatingChange(0)}
+                                    className="text-sm text-indigo-600 hover:text-indigo-800 flex items-center"
+                                >
+                                    <span>Clear</span>
+                                </button>
+                            )}
+                        </div>
+                        <div className="flex items-center space-x-1">
                             {[1, 2, 3, 4, 5].map((rating) => (
                                 <button
                                     key={rating}
                                     onClick={() => handleRatingChange(rating)}
-                                    className={`p-1 ${filters.rating === rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                                    className="group p-1 transition-all duration-200 hover:scale-110"
+                                    title={`${rating} star${rating > 1 ? 's' : ''} and above`}
                                 >
-                                    <FaStar className="w-6 h-6" />
+                                    <FaStar 
+                                        className={`w-6 h-6 transition-colors duration-200 ${
+                                            rating <= (filters.rating || 0)
+                                                ? 'text-yellow-400'
+                                                : 'text-gray-300 group-hover:text-yellow-200'
+                                        }`}
+                                    />
                                 </button>
                             ))}
                         </div>
+                        {(filters?.rating ?? 0) > 0 && (
+                            <p className="text-sm text-gray-600 mt-2">
+                                Showing {(filters?.rating ?? 0)} {(filters?.rating ?? 0) === 1 ? 'star' : 'stars'} & above
+                            </p>
+                        )}
                     </div>
                 </div>
             </div>
@@ -253,8 +407,9 @@ export const ProductListing = () => {
                                         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${
                                             loadingImages[product.id] ? 'opacity-0' : 'opacity-100'
                                         }`}
-                                        onLoad={() => handleImageLoad(product.id)}
+                                        onLoad={() => handleImageLoad(product.id, product.images.find(img => img.is_primary)?.url || '')}
                                         onError={() => handleImageError(product.id)}
+                                        loading="lazy"
                                     />
                                     <button
                                         onClick={() => isInWishlist 
