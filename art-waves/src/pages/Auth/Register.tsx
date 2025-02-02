@@ -4,6 +4,15 @@ import { useRegisterMutation } from '../../services/authApi';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../slices/authSlice';
 import { RootState } from '../../store/store';
+import { Input } from '../../components/ui/Input';
+
+interface FormErrors {
+  firstname?: string;
+  lastname?: string;
+  email?: string;
+  password?: string;
+  confirmPassword?: string;
+}
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -20,15 +29,47 @@ export const Register = () => {
     lastname: '',
     imageUrl: '',
   });
-  const [error, setError] = useState('');
+  const [errors, setErrors] = useState<FormErrors>({});
   const [loading, setLoading] = useState(false);
 
-  // Redirect if already authenticated
   useEffect(() => {
     if (isAuthenticated) {
       navigate('/dashboard');
     }
   }, [isAuthenticated, navigate]);
+
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.firstname.trim()) {
+      newErrors.firstname = 'First name is required';
+    }
+
+    if (!formData.lastname.trim()) {
+      newErrors.lastname = 'Last name is required';
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+
+    if (!formData.password) {
+      newErrors.password = 'Password is required';
+    } else if (formData.password.length < 6) {
+      newErrors.password = 'Password must be at least 6 characters long';
+    }
+
+    if (!formData.confirmPassword) {
+      newErrors.confirmPassword = 'Please confirm your password';
+    } else if (formData.password !== formData.confirmPassword) {
+      newErrors.confirmPassword = 'Passwords do not match';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -36,15 +77,19 @@ export const Register = () => {
       ...prev,
       [name]: value
     }));
+    // Clear the error for this field when user starts typing
+    if (errors[name as keyof FormErrors]) {
+      setErrors(prev => ({
+        ...prev,
+        [name]: undefined
+      }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
 
-    // Validate passwords match
-    if (formData.password !== formData.confirmPassword) {
-      setError('Passwords do not match');
+    if (!validateForm()) {
       return;
     }
 
@@ -54,23 +99,26 @@ export const Register = () => {
       const { confirmPassword, ...registrationData } = formData;
       const response = await registerMutation(registrationData).unwrap();
 
-      // Dispatch login action with token
       dispatch(login({ 
         token: response.token,
         rememberMe: false
       }));
-      
-      // Redirect will happen automatically due to useEffect
-    } catch (err: any) {
-      const errorMessage = err.data?.error || err.message || 'Registration failed';
-      setError(errorMessage);
+    } catch (err: unknown) {
+      const errorMessage = err && typeof err === 'object' && 'data' in err 
+        ? (err.data as { error?: string })?.error 
+        : err instanceof Error 
+          ? err.message 
+          : 'Registration failed';
+      setErrors(prev => ({
+        ...prev,
+        email: errorMessage
+      }));
     } finally {
       setLoading(false);
     }
   };
 
   const handleSocialLogin = (provider: string) => {
-    // Implement social login logic here
     console.log(`Register with ${provider}`);
   };
 
@@ -82,113 +130,77 @@ export const Register = () => {
           <p className="mt-2 text-sm text-gray-600">Create your account</p>
         </div>
 
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          {error && (
-            <div className="bg-red-50 text-red-500 p-3 rounded-md text-sm">
-              {error}
-            </div>
-          )}
-
+        <form className="mt-8 space-y-6" onSubmit={handleSubmit} noValidate>
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
-              <input
-                type="text"
+              <Input
                 name="firstname"
+                type="text"
                 required
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 placeholder="First Name"
                 value={formData.firstname}
                 onChange={handleChange}
+                error={errors.firstname}
+                autoComplete="given-name"
               />
-              <input
-                type="text"
+              <Input
                 name="lastname"
+                type="text"
                 required
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Last Name"
                 value={formData.lastname}
                 onChange={handleChange}
+                error={errors.lastname}
+                autoComplete="family-name"
               />
             </div>
 
-            <div>
-              <input
-                type="email"
-                name="email"
-                required
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </div>
+            <Input
+              name="email"
+              type="email"
+              required
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              error={errors.email}
+              autoComplete="email"
+            />
 
-            <div className="relative">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                required
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Password"
-                value={formData.password}
-                onChange={handleChange}
-              />
-              <button
-                type="button"
-                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
-                onClick={() => setShowPassword(!showPassword)}
-              >
-                {showPassword ? (
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                  </svg>
-                ) : (
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                )}
-              </button>
-            </div>
+            <Input
+              name="password"
+              type="password"
+              required
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              error={errors.password}
+              showPasswordToggle
+              showPassword={showPassword}
+              onTogglePassword={() => setShowPassword(!showPassword)}
+              autoComplete="new-password"
+            />
 
-            <div className="relative">
-              <input
-                type={showConfirmPassword ? "text" : "password"}
-                name="confirmPassword"
-                required
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Confirm Password"
-                value={formData.confirmPassword}
-                onChange={handleChange}
-              />
-              <button
-                type="button"
-                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
-                onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-              >
-                {showConfirmPassword ? (
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                  </svg>
-                ) : (
-                  <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                  </svg>
-                )}
-              </button>
-            </div>
+            <Input
+              name="confirmPassword"
+              type="password"
+              required
+              placeholder="Confirm Password"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              error={errors.confirmPassword}
+              showPasswordToggle
+              showPassword={showConfirmPassword}
+              onTogglePassword={() => setShowConfirmPassword(!showConfirmPassword)}
+              autoComplete="new-password"
+            />
 
-            <div>
-              <input
-                type="url"
-                name="imageUrl"
-                className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                placeholder="Profile Image URL (Optional)"
-                value={formData.imageUrl}
-                onChange={handleChange}
-              />
-            </div>
+            <Input
+              name="imageUrl"
+              type="url"
+              placeholder="Profile Image URL (Optional)"
+              value={formData.imageUrl}
+              onChange={handleChange}
+            />
           </div>
 
           <button
