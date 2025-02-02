@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route element={<AuthLayout />}>
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/signup" element={<Register />} />
           </Route>
           {/* Protected Routes */}
           <Route element={<ProtectedRoute />}>
