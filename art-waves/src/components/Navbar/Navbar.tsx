@@ -28,9 +28,20 @@ export const Navbar = () => {
             }
         };
 
+        const handleScroll = () => {
+            if (isProfileDropdownOpen) {
+                setIsProfileDropdownOpen(false);
+            }
+        };
+
         updatePosition();
         window.addEventListener('resize', updatePosition);
-        return () => window.removeEventListener('resize', updatePosition);
+        window.addEventListener('scroll', handleScroll, true);
+        
+        return () => {
+            window.removeEventListener('resize', updatePosition);
+            window.removeEventListener('scroll', handleScroll, true);
+        };
     }, [isProfileDropdownOpen]);
 
     useEffect(() => {
