@@ -12,6 +12,7 @@ import { ProductListing } from "./pages/Product/ProductListing.tsx";
 import { CartPage } from "./pages/Cart/CartPage.tsx";
 import { WishlistPage } from "./pages/Wishlist/WishlistPage.tsx";
 import { store } from "./store/store";
+import { ProductDetails } from "./pages/Product/ProductDetails.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -26,9 +27,9 @@ createRoot(document.getElementById("root")!).render(
             {/* Protected Routes */}
             {/* <Route element={<ProtectedRoute />}> */}
             <Route element={<App />}>
-              <Route path="/dashboard" element={<>New Route</>} />
-              <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/" element={<Navigate to="/shop" replace />} />
               <Route path="/shop" element={<ProductListing />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
             </Route>

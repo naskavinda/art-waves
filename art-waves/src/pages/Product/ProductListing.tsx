@@ -6,12 +6,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToWishlist, removeFromWishlist } from '../../store/features/wishlistSlice';
 import { addToCart } from '../../store/features/cartSlice';
 import { RootState } from '../../store/store';
+import { useNavigate } from 'react-router';
 
 const ITEMS_PER_PAGE = 12;
 
 export const ProductListing = () => {
     const dispatch = useDispatch();
     const wishlistItems = useSelector((state: RootState) => state.wishlist.items);
+    const navigate = useNavigate();
 
     const [filters, setFilters] = useState<FilterParams>({
         page: 1,
@@ -154,6 +156,10 @@ export const ProductListing = () => {
     useEffect(() => {
         fetchProducts();
     }, [filters]);
+
+    const handleProductClick = (productId: number) => {
+        navigate(`/product/${productId}`);
+    };
 
     return (
         <div className="flex min-h-screen bg-gray-100">
@@ -392,10 +398,11 @@ export const ProductListing = () => {
                     {products.map((product, index) => {
                         const isInWishlist = wishlistItems.some(item => item.id === product.id);
                         return (
-                            <div
-                                key={product.id}
+                            <div 
+                                key={product.id} 
                                 ref={index === products.length - 1 ? lastProductRef : null}
-                                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                                onClick={() => handleProductClick(product.id)}
                             >
                                 <div className="relative pb-[100%]">
                                     {loadingImages[product.id] && (
@@ -412,10 +419,12 @@ export const ProductListing = () => {
                                         loading="lazy"
                                     />
                                     <button
-                                        onClick={() => isInWishlist 
-                                            ? dispatch(removeFromWishlist(product.id))
-                                            : dispatch(addToWishlist(product))
-                                        }
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            isInWishlist 
+                                                ? dispatch(removeFromWishlist(product.id))
+                                                : dispatch(addToWishlist(product));
+                                        }}
                                         className={`absolute top-2 left-2 p-2 rounded-full transition-colors duration-300 ${
                                             isInWishlist 
                                                 ? 'bg-red-500 text-white' 
@@ -459,7 +468,10 @@ export const ProductListing = () => {
                                             </span>
                                         </div>
                                         <button 
-                                            onClick={() => dispatch(addToCart(product))}
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                dispatch(addToCart(product));
+                                            }}
                                             className="w-full flex items-center justify-center space-x-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-300"
                                         >
                                             <FaShoppingCart className="w-4 h-4" />

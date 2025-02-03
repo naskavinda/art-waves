@@ -56,6 +56,23 @@ export interface ProductResponse {
   filters: FilterParams;
 }
 
+export interface ProductDetails extends Product {
+  reviews: {
+    id: number;
+    rating: number;
+    comment: string;
+    reviewer_name: string;
+    date: string;
+  }[];
+  average_rating: number;
+  review_count: number;
+}
+
+export interface ProductDetailsResponse {
+  product: ProductDetails;
+  relatedProducts: Product[];
+}
+
 export const productApi = createApi({
   reducerPath: "productApi",
   baseQuery: fetchBaseQuery({
@@ -83,10 +100,15 @@ export const productApi = createApi({
       }),
       invalidatesTags: ["Products"],
     }),
+
+    getProductDetails: builder.query<ProductDetailsResponse, number>({
+      query: (productId) => `/products/${productId}`,
+    }),
   }),
 });
 
 export const {
   useGetCategoriesQuery,
   useGetProductsByFilterMutation,
+  useGetProductDetailsQuery,
 } = productApi;

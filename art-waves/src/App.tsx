@@ -1,9 +1,9 @@
-import { Outlet } from 'react-router'
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { Outlet } from 'react-router';
+import './App.css';
 import { clearCart } from './store/features/cartSlice';
 import { clearWishlist } from './store/features/wishlistSlice';
-import './App.css'
 
 const INACTIVITY_TIMEOUT = 60 * 60 * 1000; // 60 minutes in milliseconds
 const ACTIVITY_CHECK_INTERVAL = 60 * 1000; // Check every minute
