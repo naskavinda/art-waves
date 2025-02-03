@@ -79,6 +79,20 @@ function generateImages(productId) {
   ];
 }
 
+// Function to generate a unique ID
+let lastProductId = 0;
+let lastReviewId = 0;
+
+function generateUniqueProductId() {
+  lastProductId += 1;
+  return lastProductId;
+}
+
+function generateUniqueReviewId() {
+  lastReviewId += 1;
+  return lastReviewId;
+}
+
 // Add review-related arrays
 const reviewComments = [
   "Absolutely stunning piece! The colors are vibrant and the detail is incredible.",
@@ -114,7 +128,7 @@ function generateReviews() {
   for (let i = 0; i < numReviews; i++) {
     const rating = randomRange(3, 5); // Ratings from 3-5 stars
     reviews.push({
-      id: i + 1,
+      id: generateUniqueReviewId(),
       rating,
       comment: reviewComments[Math.floor(Math.random() * reviewComments.length)],
       reviewer_name: reviewerNames[Math.floor(Math.random() * reviewerNames.length)],
@@ -137,6 +151,7 @@ function generateReviews() {
 // Function to generate products
 function generateProducts(categories, count) {
   const products = [];
+  const usedNames = new Set(); // Track used names to ensure uniqueness
   
   for (let i = 1; i <= count; i++) {
     const categoryId = randomRange(1, categories.length);
@@ -145,9 +160,16 @@ function generateProducts(categories, count) {
     const discount = generateDiscount();
     const final_price = Number((price * (1 - discount / 100)).toFixed(2));
     
+    // Generate a unique name
+    let name = generateName();
+    while (usedNames.has(name)) {
+      name = generateName();
+    }
+    usedNames.add(name);
+    
     products.push({
-      id: i,
-      name: generateName(),
+      id: generateUniqueProductId(),
+      name,
       description: generateDescription(category.name),
       price,
       discount,
@@ -155,7 +177,7 @@ function generateProducts(categories, count) {
       category_id: categoryId,
       stock: randomRange(1, 10),
       images: generateImages(i),
-      ...generateReviews() // Add reviews to each product
+      ...generateReviews()
     });
   }
   
