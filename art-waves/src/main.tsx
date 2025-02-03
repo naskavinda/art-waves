@@ -14,6 +14,7 @@ import { WishlistPage } from "./pages/Wishlist/WishlistPage.tsx";
 import { store } from "./store/store";
 import { ProductDetails } from "./pages/Product/ProductDetails.tsx";
 import { AddressPage } from "./pages/Checkout/AddressPage.tsx";
+import { PaymentPage } from "./pages/Checkout/PaymentPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -33,6 +34,7 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/checkout" element={<CartPage />} />
               <Route path="/checkout/address" element={<AddressPage />} />
+              <Route path="/checkout/payment" element={<PaymentPage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
             </Route>
             {/* </Route> */}
