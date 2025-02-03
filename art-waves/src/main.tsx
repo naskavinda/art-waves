@@ -13,6 +13,7 @@ import { CartPage } from "./pages/Cart/CartPage.tsx";
 import { WishlistPage } from "./pages/Wishlist/WishlistPage.tsx";
 import { store } from "./store/store";
 import { ProductDetails } from "./pages/Product/ProductDetails.tsx";
+import { AddressPage } from "./pages/Checkout/AddressPage.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -30,7 +31,8 @@ createRoot(document.getElementById("root")!).render(
               <Route path="/" element={<Navigate to="/shop" replace />} />
               <Route path="/shop" element={<ProductListing />} />
               <Route path="/product/:id" element={<ProductDetails />} />
-              <Route path="/cart" element={<CartPage />} />
+              <Route path="/checkout" element={<CartPage />} />
+              <Route path="/checkout/address" element={<AddressPage />} />
               <Route path="/wishlist" element={<WishlistPage />} />
             </Route>
             {/* </Route> */}
