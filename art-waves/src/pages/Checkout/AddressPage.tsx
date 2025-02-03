@@ -7,6 +7,7 @@ import { Input } from '../../components/ui/Input';
 export const AddressPage = () => {
     const navigate = useNavigate();
     const cartItems = useSelector((state: RootState) => state.cart.items);
+    const user = useSelector((state: RootState) => state.auth.user);
     const [formData, setFormData] = React.useState({
         firstName: '',
         lastName: '',
@@ -19,6 +20,18 @@ export const AddressPage = () => {
         country: ''
     });
     const [errors, setErrors] = React.useState<{ [key: string]: string }>({});
+
+    // Load user details when component mounts
+    React.useEffect(() => {
+        if (user) {
+            setFormData(prev => ({
+                ...prev,
+                firstName: user.firstname || '',
+                lastName: user.lastname || '',
+                email: user.email || ''
+            }));
+        }
+    }, [user]);
 
     React.useEffect(() => {
         // Redirect to cart if cart is empty
