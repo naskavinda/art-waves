@@ -204,6 +204,110 @@ Content-Type: application/json
 }
 ```
 
+### Coupons
+
+#### List Active Coupons
+```http
+GET /api/coupons
+```
+
+Response:
+```json
+{
+  "coupons": [
+    {
+      "code": "WELCOME20",
+      "description": "Welcome discount for new customers",
+      "discount_type": "percentage",
+      "discount_value": 20,
+      "min_purchase": 100,
+      "max_discount": 1000,
+      "valid_until": "2025-12-31T00:00:00.000Z"
+    }
+  ]
+}
+```
+
+#### Validate Coupon
+```http
+POST /api/coupons/validate
+Content-Type: application/json
+
+{
+  "code": "WELCOME20",
+  "cart_items": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "price": 899.99,
+      "quantity": 1
+    }
+  ],
+  "total_amount": 899.99
+}
+```
+
+Response:
+```json
+{
+  "valid": true,
+  "coupon": {
+    "code": "WELCOME20",
+    "description": "Welcome discount for new customers",
+    "discount_type": "percentage",
+    "discount_value": 20,
+    "applies_to": "all"
+  },
+  "discount_amount": 180.00
+}
+```
+
+#### Apply Coupon
+```http
+POST /api/coupons/apply
+Content-Type: application/json
+
+{
+  "code": "WELCOME20"
+}
+```
+
+### Coupon Types and Rules
+
+#### Available Coupon Types
+1. **Percentage Discount**
+   - Applies percentage off the eligible amount
+   - Example: WELCOME20 (20% off entire purchase)
+
+2. **Fixed Amount Discount**
+   - Applies fixed dollar amount off
+   - Example: ART100 ($100 off paintings)
+
+3. **Category-Specific Discount**
+   - Only applies to specific product categories
+   - Example: DIGITAL30 (30% off digital art)
+
+#### Validation Rules
+1. **Minimum Purchase**
+   - Each coupon has a minimum order amount
+   - Cart total must meet this requirement
+
+2. **Maximum Discount**
+   - Caps the maximum discount amount
+   - Prevents excessive discounts on large orders
+
+3. **Usage Limits**
+   - Maximum number of times a coupon can be used
+   - Tracked globally across all users
+
+4. **Validity Period**
+   - Start and end dates for the coupon
+   - Automatically expires after end date
+
+5. **Category Restrictions**
+   - Some coupons only apply to specific categories
+   - Discount calculated only on eligible items
+
 ## Error Handling
 
 The API uses standard HTTP status codes:
@@ -220,16 +324,36 @@ Error Response Format:
 }
 ```
 
+Common Error Cases:
+1. Invalid coupon code
+2. Expired coupon
+3. Minimum purchase not met
+4. Usage limit exceeded
+5. Invalid product ID
+6. Missing required fields
+
 ## Development
 
-### Scripts
+### Available Scripts
 - `npm run dev`: Start development server
 - `npm run seed`: Generate sample data
 - `npm test`: Run tests
+- `npm run lint`: Run ESLint
 
-## Contributing
+### Data Generation
+The seed script generates:
+- 8 product categories
+- 100 sample products
+- 10 sample coupons (3 fixed + 7 random)
+
+### Contributing
 1. Fork the repository
 2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
+
+### Environment Variables
+```env
+PORT=3000              # Server port (default: 3000)
+NODE_ENV=development   # Environment (development/production)

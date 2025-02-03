@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
+  "description": "## Overview Art Waves is a modern e-commerce platform for art enthusiasts. This backend API provides endpoints for managing products, categories, reviews, and user authentication.",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

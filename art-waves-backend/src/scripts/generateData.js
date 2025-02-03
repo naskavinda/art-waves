@@ -184,6 +184,24 @@ function generateProducts(categories, count) {
   return products;
 }
 
+// Function to generate simple coupons
+function generateCoupons() {
+  return [
+    {
+      code: 'WELCOME20',
+      discount_amount: 20 // 20% discount
+    },
+    {
+      code: 'SPECIAL30',
+      discount_amount: 30 // 30% discount
+    },
+    {
+      code: 'SUPER50',
+      discount_amount: 50 // 50% discount
+    }
+  ];
+}
+
 // Categories data
 const categories = [
   {
@@ -228,14 +246,24 @@ const categories = [
   }
 ];
 
-// Generate data
-const data = {
-  categories,
-  products: generateProducts(categories, 100) // Generate 100 products
-};
+// Main function to generate all data
+function generateData() {
+  const products = generateProducts(categories, 100);
+  const coupons = generateCoupons();
 
-// Write to file
-const outputPath = path.join(__dirname, '../data/db.json');
-fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
-console.log(`Generated ${data.products.length} products in ${data.categories.length} categories`);
-console.log(`Data written to ${outputPath}`);
+  const data = {
+    categories,
+    products,
+    coupons
+  };
+
+  fs.writeFileSync(
+    path.join(__dirname, '../data/db.json'),
+    JSON.stringify(data, null, 2)
+  );
+
+  console.log(`Generated ${products.length} products in ${categories.length} categories`);
+  console.log(`Generated ${coupons.length} coupons`);
+}
+
+generateData();
