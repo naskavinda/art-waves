@@ -59,7 +59,7 @@ export const ProductDetails = () => {
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 max-w-7xl">
         {/* Breadcrumb */}
-        <nav className="mb-4 sm:mb-6 lg:mb-8 overflow-x-auto whitespace-nowrap">
+        {/* <nav className="mb-4 sm:mb-6 lg:mb-8 overflow-x-auto whitespace-nowrap">
           <ol className="flex items-center space-x-2 text-sm text-gray-500">
             <li><a href="/" className="hover:text-indigo-600">Home</a></li>
             <li>/</li>
@@ -67,7 +67,7 @@ export const ProductDetails = () => {
             <li>/</li>
             <li className="text-gray-900 font-medium truncate">{product.name}</li>
           </ol>
-        </nav>
+        </nav> */}
 
         <div className="bg-white rounded-2xl shadow-sm p-4 sm:p-6 lg:p-8 mb-6 sm:mb-8 lg:mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
