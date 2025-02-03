@@ -535,6 +535,117 @@ Content-Type: application/json
    - Some coupons only apply to specific categories
    - Discount calculated only on eligible items
 
+## Authentication Endpoints
+
+### Sign Up
+Create a new user account.
+
+```http
+POST /api/auth/signup
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "password123",
+  "firstname": "John",
+  "lastname": "Doe",
+  "imageUrl": "https://example.com/profile.jpg" // Optional
+}
+```
+
+#### Required Fields
+- `email`: Valid email address
+- `password`: At least 6 characters long
+- `firstname`: User's first name
+- `lastname`: User's last name
+- `imageUrl`: Optional profile image URL
+
+#### Success Response
+```json
+{
+  "token": "jwt_token_here",
+  "user": {
+    "id": 1,
+    "email": "user@example.com",
+    "firstname": "John",
+    "lastname": "Doe",
+    "imageUrl": "https://example.com/profile.jpg"
+  }
+}
+```
+
+#### Error Responses
+```json
+{
+  "error": "Email, password, firstname, and lastname are required"
+}
+```
+```json
+{
+  "error": "Invalid email format"
+}
+```
+```json
+{
+  "error": "Password must be at least 6 characters long"
+}
+```
+```json
+{
+  "error": "User already exists with this email. Please login instead."
+}
+```
+
+### Login
+Authenticate an existing user.
+
+```http
+POST /api/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",  // Can use either email or username
+  "password": "password123"
+}
+```
+
+#### Required Fields
+- `email` or `username`: User's email address or username
+- `password`: User's password
+
+#### Success Response
+```json
+{
+  "token": "jwt_token_here",
+  "user": {
+    "id": 1,
+    "email": "user@example.com",
+    "firstname": "John",
+    "lastname": "Doe",
+    "imageUrl": "https://example.com/profile.jpg"
+  }
+}
+```
+
+#### Error Responses
+```json
+{
+  "error": "Email/username and password are required"
+}
+```
+```json
+{
+  "error": "Invalid credentials"
+}
+```
+
+### Authentication
+The API uses JWT (JSON Web Token) for authentication. For protected endpoints, include the token in the Authorization header:
+
+```http
+Authorization: Bearer <jwt_token>
+```
+
 ## Error Handling
 
 The API uses standard HTTP status codes:
